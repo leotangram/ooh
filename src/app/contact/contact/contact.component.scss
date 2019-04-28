@@ -1,0 +1,195 @@
+@import '../../../sass/common';
+
+.contact{
+   height: 100%;
+
+   &__header{
+      height: 35vh;
+      background: #1DC1C1;
+      width: 100%;
+
+      &__title{
+         font-family: Sarabun-SemiBold;
+         font-size: 3rem;
+         color: #FFFFFF;
+         letter-spacing: -0.81px;
+         text-align: left;
+         line-height: 34.2px;
+         margin-top: 5rem;
+      }
+
+      &__text{
+         font-family: Sarabun-Regular;
+         font-size: 1.5rem;
+         color: #FFFFFF;
+         letter-spacing: 0;
+         line-height: 20.2px;
+         margin: 2rem 0;
+      }
+
+      &__text2{
+         font-family: Sarabun-Regular;
+         font-size: 2.3rem;
+         color: #FFFFFF;
+         letter-spacing: 0;
+         line-height: 31.2px;
+      }
+
+      &__button{
+         margin-top: 3rem;
+      }
+
+      &__image{
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         &__pic{
+            width: 60%;
+         }
+      }
+   }
+
+   &__body{
+     &__form{
+      padding: 1rem 10rem;
+
+      &__area{
+         background: #FFFFFF !important;
+         border: 1px solid #C7C7C7 !important;
+         border-radius: 7px !important;
+         font-family: Sarabun-SemiBold !important;
+         font-size: 14px !important;
+         color: #25364B !important;
+         letter-spacing: 0 !important;
+         width: 100%;
+         padding: 2rem !important;
+         height: 10rem;
+
+      }
+
+      &__button{
+         text-align: center;
+         margin-top: 2rem;
+      }
+     }
+   }
+
+   &__congrat{
+      background-image: url("/assets/images/loanscongrat.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      height: 100%;
+
+      &__content{
+         width: 50%;
+         height: 100%;
+         padding: 10rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+
+      &__title{
+         font-family: Sarabun-SemiBold;
+         font-size: 3.9rem;
+         color: #FFFFFF;
+         letter-spacing: -1.02px;
+         line-height: 45.98px;
+      }
+
+      &__text{
+         font-family: Sarabun-Regular;
+         font-size: 2.2rem;
+         color: #FFFFFF;
+         letter-spacing: -0.57px;
+         line-height: 35.98px;
+         margin: 4rem 0;
+      }
+
+      &__coins{
+         position: absolute;
+         top:45%;
+         left: 32%;
+
+         &__pic{
+            width: 45rem;
+         }
+      }
+   }
+
+}
+
+.mobile{
+   &__contact{
+      &__header{
+         background: #1DC1C1;
+         padding: 4rem;
+
+         &__title{
+            font-family: Sarabun-SemiBold;
+            font-size: 3rem;
+            color: #FFFFFF;
+            letter-spacing: -0.96px;
+            line-height: 27.63px;
+            text-align: left;
+         }
+         &__text{
+            font-family: Sarabun-Regular;
+            font-size: 2rem;
+            color: #FFFFFF;
+            letter-spacing: -0.96px;
+            line-height: 32.63px;
+            text-align: left;
+         }
+
+         &__button{
+            text-align: center;
+            margin-top: 3rem;
+         }
+      }
+
+      &__body{
+         padding: 3rem;
+
+         &__form{
+
+         }
+      }
+
+      &__congrat{
+         height: 100vh;
+         background: #1DC1C1;
+         background-image: url("/assets/images/contactmoney.png");
+         background-repeat: no-repeat;
+         background-size: 10rem;
+         background-position-x: 100%;
+         background-position-y: 20%;
+         padding: 4rem;
+
+         &__title{
+           font-family: Sarabun-SemiBold;
+           font-size: 3rem;
+           color: #FFFFFF;
+           letter-spacing: -0.59px;
+           line-height: 30.49px;
+           margin-top: 5rem;
+         }
+
+         &__text{
+            font-family: Sarabun-Regular;
+           font-size: 2rem;
+           color: #FFFFFF;
+           letter-spacing: -0.59px;
+           line-height: 30.49px;
+           margin-top: 5rem;
+         }
+
+         &__button{
+           margin-top: 5rem;
+         }
+      }
+   }
+}

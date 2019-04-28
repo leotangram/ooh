@@ -1,0 +1,727 @@
+@import './src/sass/variables';
+
+.landing{
+  height: 100%;
+
+  &__main{
+    height: 98%;
+    background-image: url("/assets/images/mainback.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__first{
+      padding: 5rem 3rem !important;
+      height: 100%;
+
+
+      &__text{
+        font-family : Sarabun-ExtraBold;
+        font-size : 7rem;
+        line-height : 62.14px;
+        color: #E51A7A;
+        margin-bottom: 4rem;
+        span{
+          color : #FC5424;
+        }
+      }
+
+      &__sub{
+        font-family : Sarabun-Regular;
+        font-size : 2.5rem;
+        line-height : 28px;
+        color : #414042;
+      }
+
+      &__promo{
+        margin: 4rem 0;
+      }
+
+    }
+
+    &__second{
+      display: flex !important;
+      align-items: flex-end !important;
+     
+      &__image{
+        margin-bottom: 8rem;
+
+        &__pic{
+          width: 60rem;
+        }
+      }
+      
+    }
+  }
+
+  &__specialize{
+    height: 98%;
+
+    &__header{
+      height: 26vh;
+      background: #FC5424;
+
+      &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        &__image{
+          &__pic{
+            width: 10rem;
+          }
+        }
+
+        &__text{
+          font-family : Sarabun-Regular;
+          font-size : 5.5rem;
+          color : #FFFFFF;
+          margin-left: 2rem;
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
+
+    &__content{
+      height: 40vh;
+      display: flex;
+
+      &__card{
+        width: 33%;
+        height: 100%;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+        &__image{
+          &__pic{
+            width: 15rem;
+          }
+        }
+
+        &__text{
+          font-family : Sarabun-SemiBold;
+          font-size : 2.5rem;
+          color : #414042;
+          text-align: center;
+          line-height: 30px;
+          margin-top: 1rem;
+
+          span{
+            color:#FC5424
+          }
+        }
+      }
+    }
+
+    &__footer{
+      height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__specialize2{
+    height: 98%;
+
+    &__header{
+      height: 26vh;
+      background: #FC5424;
+
+      &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        &__text{
+          font-family : Sarabun-Regular;
+          font-size : 5rem;
+          line-height: 58.3px;
+          text-align: center;
+          color : #FFFFFF;
+        }
+      }
+    }
+
+    &__content{
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+
+      &__card{
+        width: 100%;
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        
+        &__column{
+          width: 20%;
+        }
+        &__column3{
+          width: 30%;
+        }
+
+        &__card2{
+          width: 100%;
+          padding: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding-top: 2rem !important;
+          padding-bottom: 0 !important;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+        &__text1{
+          font-family : Sarabun-Regular;
+          font-size : 2.5rem;
+          line-height : 22.25px;
+          color : #E51A7A;
+          text-align: center;
+        }
+        &__text2{
+          font-family : Sarabun-Regular;
+          font-size : 2.5rem;
+          line-height : 22.25px;
+          color : #FC5424;
+          text-align: center;
+        }
+        &__text3{
+          font-family : Sarabun-SemiBold;
+          font-size : 2.5rem;
+          line-height : 22.25px;
+          color : #414042;
+          text-align: center;
+
+          span{
+            color : #E51A7A;
+          }
+        }
+      }
+    }
+
+    &__footer{
+      height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__quality{
+    height: 99%;
+    background-image: url("/assets/images/backquality.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__image{
+      text-align: center;
+      height: 65vh;
+      position: relative;
+      margin-top: 3rem;
+
+      &__pic{
+        width: 85%;
+      }
+    }
+
+    &__text{
+      position: absolute;
+      top: 1rem;
+      right: 8rem;  
+      font-family : Sarabun-ExtraBold;
+      font-size : 5rem;
+      line-height : 50.14px;
+      color: #E51A7A;
+
+    }
+
+    &__button{
+      text-align: center;
+      height: 22vh;
+
+      &__text{
+        margin-top: -2rem;
+        margin-bottom: 1rem;    
+        font-family : Sarabun-ExtraBold;
+        font-size : 2.5rem;
+        line-height : 50.14px;
+        color: #E51A7A;
+      }
+    }
+  }
+
+  &__company{
+    height: 44vh;
+
+    &__content{
+      display: flex !important;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 5rem !important;
+
+
+      &__text{
+        font-family : Sarabun-ExtraBold;
+        font-size : 7rem;
+        line-height : 70.14px;
+        color: #414042;
+        text-align: right;
+        
+        span{
+          color: #E51A7A;
+        }
+  
+      }
+
+      &__container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+
+        &__card{
+          width: 100%;
+          padding: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 1rem !important;
+          padding-bottom: 1rem !important;
+          
+          &__text1{
+            font-family : Sarabun-Regular;
+            font-size : 2.5rem;
+            line-height : 22.93px;
+            color : #414042;
+            text-align: center;
+            padding: 0 2rem;
+
+          }
+          &__column{
+            width: 33%;
+          }
+          &__column3{
+            width: 30%;
+          }
+
+          &__card2{
+            width: 100%;
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 2rem !important;
+            padding-bottom: 0 !important;
+          }
+
+          &__image{
+              width: 60%;
+          }
+
+          &__image2{
+            text-align: center;
+            &__pic{
+              width: 40%;
+            }
+          }
+
+        }
+        
+      }
+      
+    }
+  }
+
+  &__banner{
+    height: 44vh;
+    background: #E51A7A;
+
+    &__content{
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      padding: 0 5rem;
+      height: 100%;
+
+      &__image{
+        margin: 0 3rem;
+
+        &__pic{
+          width: 15rem;
+        }
+
+        &__pic2{
+          width: 5rem;
+        }
+      }
+
+     &__text{
+      font-family : Sarabun-SemiBold;
+      font-size : 3.5rem;
+      line-height : 30px;
+      letter-spacing : 0.95px;
+      color : #FFFFFF;
+      padding: 0 4rem;
+     }
+
+     &__button{
+      margin-top: 5rem;
+      padding: 0 4rem;
+     }
+      
+    }
+  }
+
+  &__footer{
+    height: 10rem;
+    background: #F1F2F2;
+
+    &__title{
+      font-family : Sarabun-Bold;
+      font-size : 2rem;
+      margin: 4rem 0px;
+      line-height : 21px;
+      color : #414042;
+    }
+
+    &__content{
+      font-family : Sarabun-Regular;
+      font-size : 1.7rem;
+      line-height : 30px;
+      color : #414042;
+
+      &__content2{
+        font-family : Sarabun-Regular;
+        font-size : 1.7rem;
+        line-height : 30px;
+        color : #414042;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+ 
+}
+
+.mobile{
+  margin-top: 6rem;
+  
+  &__landing{
+    position: relative;
+
+      &__text{
+        font-family: Sarabun-ExtraBold;
+        font-size: 4.5rem;
+        line-height: 40.14px;
+        color: #E51A7A;
+        padding: 0rem 2rem;
+        padding-top: 4rem !important; 
+        text-align: center;
+        span{
+          color : #FC5424;
+        }
+      }
+
+      &__sub{
+        font-family: Sarabun-Regular;
+        font-size: 2rem;
+        padding: 0 2rem;
+        line-height: 20px;
+        color: #414042;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      &__promo-con{
+        background-image: url("/assets/images/mainbackmob.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &__promo{
+        padding: 2rem;
+        text-align: center;
+      }
+
+      &__image{
+        text-align: center;
+
+        &__pic{
+          width: 30rem;
+        }
+      }
+
+      &__button{
+        padding: 2rem;
+        text-align: center;
+      }
+
+      &__drop{
+
+        &__title{
+           background: #FFFFFF;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           border-top: 1px solid #F5F5F5;
+
+           &__text{
+              font-family: Sarabun-Bold;
+              font-size: 2.5rem;
+              color: #EA5133;
+              letter-spacing: 0;
+              text-align: left;
+              padding: 2rem;
+              margin-left: 2rem;
+           }
+
+           &__text3{
+            font-family: Sarabun-Bold;
+            font-size: 2.5rem;
+            color: #E51A7A;
+            letter-spacing: 0;
+            text-align: left;
+            padding: 2rem;
+            margin-left: 2rem;
+         }
+
+           &__text2{
+              font-family: Sarabun-Regular;
+              font-size: 2rem;
+              color: #365E80;
+              letter-spacing: -0.43px;
+              line-height: 21.38px;
+              margin-right: 3rem;
+              display: flex;
+              align-items: center;
+
+              &__image{
+                 margin-left: 1rem;
+                 margin-right: 2rem;
+                 &__pic{
+                    width: 2rem;
+                 }
+              }
+           }
+        }
+     }
+
+    &__1{
+      &__header{
+        height: 10vh;
+        background-image: url("/assets/images/bar.png");
+        background-size: contain;
+  
+        &__container{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+  
+          &__image{
+            &__pic{
+              width: 8rem;
+            }
+          }
+  
+          &__text{
+            font-family : Sarabun-Regular;
+            font-size : 3.5rem;
+            color : #FFFFFF;
+            margin-left: 2rem;
+          }
+        }
+      }
+
+      &__body{
+        padding: 2rem 4rem;
+        display: flex;
+        align-items: center;
+        height: 45rem;
+
+        &__image{
+          width: 30%;
+          &__pic{
+            width: 90%;
+          }
+
+        }
+        &__text-cont{
+          width: 70%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+
+          &__text{
+            
+            font-family : Sarabun-SemiBold;
+            font-size: 1.7rem;
+            margin-left: 2rem;        
+            color : #414042;
+            span{
+              color: #EA5133;
+            }
+          }
+        }
+      }
+    }
+
+    &__2{
+      &__header{
+        height: 15vh;
+        background-image: url("/assets/images/bar2.png");
+        background-size: contain;
+      
+        &__container{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+      
+          &__text{
+            font-family : Sarabun-Regular;
+            font-size : 2.5rem;
+            line-height: 25.3px;
+            text-align: center;
+            color : #FFFFFF;
+          }
+        }
+      }
+
+      &__body{
+        padding: 2rem 4rem;
+        display: flex;
+        align-items: center;
+        height: 50rem;
+
+        &__image{
+          width: 30%;
+          &__pic{
+            width: 90%;
+          }
+
+        }
+        &__text-cont{
+          width: 70%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          &__text{
+            
+            font-family : Sarabun-SemiBold;
+            font-size: 2rem;
+            margin-left: 2rem;        
+            color : #414042;
+            span{
+              color: #EA5133;
+            }
+          }
+
+          &__text2{
+            
+            font-family : Sarabun-Bold;
+            font-size: 2.5rem;
+            margin-left: 2rem;        
+            color : #E51A7A;
+            span{
+              color: #EA5133;
+            }
+          }
+        }
+      }
+    }
+    
+    &__3{
+      &__text{
+        font-family: Sarabun-ExtraBold;
+        font-size: 3.5rem;
+        line-height: 40.14px;
+        color: #414042;
+        padding: 0rem 2rem;
+        text-align: center;
+        span{
+          color : #FC5424;
+        }
+      }
+
+      &__text2{
+        font-family: Sarabun-ExtraBold;
+        font-size: 3.5rem;
+        line-height: 40.14px;
+        color: #414042;
+        padding: 0rem 2rem;
+        text-align: center;
+        span{
+          color : #FC5424;
+        }
+      }
+
+      &__cont{
+        height: 16rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__circle{
+          height: 10rem;
+          background-image: url("/assets/images/circlemob1.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 30%;
+
+        }
+        &__circle2{
+          height: 10rem;
+          background-image: url("/assets/images/circlemob2.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 30%;
+
+        }
+        &__circle3{
+          height: 10rem;
+          background-image: url("/assets/images/circlemob3.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 30%;
+
+        }
+        &__plus{
+          width: 10%;
+          height: 10rem;
+          font-family: Sarabun-ExtraBold;
+          font-size: 3rem;
+          line-height: 40.14px;
+          color: #414042;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center
+        }
+      }
+
+      &__button{
+        text-align: center;
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,182 @@
+@import './src/sass/variables';
+
+.publications{
+  height: 100%;
+  overflow-y: scroll;
+
+   &__main{
+      height: 100%;
+      background-image: url("/assets/images/dashback.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &__text2{
+         font-family : Sarabun-SemiBold;
+         font-size : 7rem;
+         line-height : 60.14px;
+         color: #E51A7A;
+         margin: 4rem 0;
+         text-align: left;
+         padding: 0 5rem;
+         span{
+         color : #FC5424;
+         }
+      } 
+
+      &__sub2{
+         font-family : Sarabun-Regular;
+         font-size : 2.5rem;
+         line-height : 30px;
+         color: #414042;
+         margin: 3rem 0 0rem 0;
+         text-align: left;
+         padding: 0 15rem 0 5rem;
+         span{
+            color: #E51A7A;
+         }
+      }
+
+      &__counter{
+        background: #e6e7e8;
+        font-family : Sarabun-SemiBold;
+        font-size : 7rem;
+        text-align: center;
+        color : #FC5424;
+        width: 35%;
+        padding: 2rem 3rem 3rem 3rem;
+        line-height: 65px;
+        margin: 3rem 5rem;
+        border-radius: 15px;
+      }
+
+      &__container{
+          margin-left: 4rem !important;
+          &__card{
+            background-image: url("/assets/images/backcard.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 23rem;
+            margin-top: 2rem;
+            display: flex;
+
+            &__card2{
+                background-image: url("/assets/images/backcard2.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 23rem;
+                margin-top: 2rem;
+                display: flex;
+                position: relative;
+            }
+
+            &__image{
+                width: 40%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &__pic{
+                    width: 8rem;
+                }
+
+                &__pic2{
+                    width: 11rem;
+                }
+            }
+
+            &__content{
+                width: 60%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                cursor: pointer;
+
+                &__title{
+                    font-family : Sarabun-SemiBold;
+                    font-size : 2.5rem;
+                    text-align: left;
+                    color : #FFFFFF;
+                    line-height: 22px;
+                    span{
+                        font-family : Sarabun-Regular;
+                        font-size : 2rem;
+                    }
+                }
+
+                &__divider{
+                    width: 80%;
+                    margin: 2rem 0;
+                }
+            }
+          }
+      }
+   }
+
+   &__large{
+    position: absolute;
+    top: -10rem;
+    left: 17rem;
+    height: 60rem;
+    width: 40rem;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: 1px solid #FC5424;
+    visibility: hidden;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__image{
+        width: 85%;
+    }
+
+    &__close{
+        position: absolute;
+        top: -12rem;
+        left: 53rem;
+        cursor: pointer;
+        visibility: hidden;
+        z-index: 6;
+
+        &__image{
+            width: 5rem;
+        }
+    }
+
+   }
+
+   &__footer{
+      height: 12%;
+      background: #F1F2F2;
+  
+      &__title{
+        font-family : Sarabun-Bold;
+        font-size : 2rem;
+        margin: 4rem 0px;
+        line-height : 21px;
+        color : #414042;
+      }
+  
+      &__content{
+        font-family : Sarabun-Regular;
+        font-size : 1.7rem;
+        line-height : 30px;
+        color : #414042;
+  
+        &__content2{
+          font-family : Sarabun-Regular;
+          font-size : 1.7rem;
+          line-height : 30px;
+          color : #414042;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+}

@@ -1,0 +1,496 @@
+@import './src/sass/common';
+
+.aditional{
+   height: 100%;
+
+   &__specialize{
+      height: 65%;
+
+      &__specialize2{
+         height:100%;
+      }
+  
+      &__header{
+        height: 30vh;
+        background-image: url("/assets/images/form2back.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding: 0px 15rem;
+
+        &__header2{
+         height: 12vh;
+         background-image: url("/assets/images/bar2.png");
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 100%;
+        padding: 0px 15rem;
+        }
+  
+        &__container{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+
+          &__container2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+          }
+  
+          &__image{
+            font-family : Sarabun-Bold;
+            font-size : 5.1rem;
+            letter-spacing : 1.33px;
+            color : #FFFFFF;
+            line-height : 50px;
+            width: 65%;
+          }
+  
+          &__text{
+            font-family : Sarabun-Regular;
+            font-size : 5rem;
+            line-height : 79.3px;
+            color : #FFFFFF;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+          }
+
+          &__text2{
+            width: 35%;
+            padding: 1.5rem 3rem;
+            border-left: 2px solid white;
+            font-family: Sarabun-Regular;
+            font-size: 3rem;
+            color: #FFFFFF;
+            line-height: 35px;
+          }
+        }
+      }
+  
+      &__content{
+
+        &__title{
+         font-family : Sarabun-Regular;
+         font-size : 2rem;
+         color : #414042;
+         text-align: center;
+         span{
+            color: #EA5133;
+         }
+        }
+
+        &__wizard{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 0 12rem;
+
+         &__wizard2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding: 0 8rem;
+         }
+
+         &__bar{
+            width: 20rem;
+            
+         }
+         &__bar2{
+            width: 20rem;
+            margin: 0 -3px;
+         }
+
+         &__card{
+
+            &__number{
+
+               &__pic{
+                  width: 5rem;
+               }
+            }
+
+            &__text{
+               font-family : Sarabun-SemiBold;
+               font-size : 2rem;
+               text-align: center;
+               color: #EA5133;
+            }
+            &__text2{
+               font-family : Sarabun-SemiBold;
+               font-size : 2rem;
+               text-align: center;
+               color: #E51A7A;
+            }
+
+         }
+
+        }
+      }
+
+      &__container{
+
+         &__check{
+            margin-top: 3rem;
+            
+            &__option{
+               text-align: right;
+               font-family : Sarabun-Regular;
+               font-size : 2rem !important;
+               color : #414042 !important;
+               margin-top: .5rem;
+            }
+
+            &__option2{
+               text-align: right;
+               font-family : Sarabun-SemiBold;
+               font-size : 2rem;
+               color : #414042;
+               margin-top: 3rem;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               &__radio{
+                  &__pic{
+                     cursor: pointer;
+                     width: 2.5rem;
+                     margin-right: .5rem;
+                  }
+               }
+            }
+            
+         }
+
+         &__button{
+            text-align: center;
+            margin: 5rem 0;
+         }
+
+         &__questionary{
+            &__answer{
+               margin-top: 5rem;
+               display: flex;
+
+               &__number{
+                  margin-right: 2rem;
+
+                  &__pic{
+                     width: 3rem;
+                  }
+                  &__pic2{
+                     width: 4rem;
+                  }
+               }
+
+               &__cont{
+                  width: 100%;
+
+                  &__text{
+                     font-family : Sarabun-Regular;
+                     font-size : 2.2rem;
+                     color : #414042;
+
+                     &__label{
+                        margin-top: 2rem;
+                     }
+                  }
+
+                  &__options{
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+                  }
+
+                  &__options2{
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+
+                     &__column{
+                        width: 50%;
+
+                        &__card{
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                           margin: 2.5rem 0;
+
+                           &__image{
+                              width: 6rem;
+                              margin: 0 1.5rem;
+                           }
+
+                           &__text{
+                              font-family : Sarabun-SemiBold;
+                              font-size : 2.2rem;
+                              color : #414042;
+                              span{
+                                 font-family : Sarabun-Regular;
+                                 font-size : 1.3rem;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+    }
+}
+
+.mobile{
+   margin-top: 6rem;
+
+   &__aditional{
+      height: 100%;
+   
+      &__specialize{
+   
+         &__specialize2{
+            height:100%;
+         }
+     
+         &__header{
+           height: 6rem;
+           background-image: url("/assets/images/bar.png");
+           background-repeat: no-repeat;
+           background-size: cover;
+           width: 100%;
+   
+           &__header2{
+            height: 6rem;
+            background-image: url("/assets/images/bar2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+           }
+     
+           &__container{
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             height: 100%;
+   
+             &__container2{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 100%;
+             }
+     
+             &__image{
+               &__pic{
+                 width: 6rem;
+               }
+             }
+     
+             &__text{
+               font-family : Sarabun-Regular;
+               font-size : 3rem;
+               line-height : 19.3px;
+               color : #FFFFFF;
+               margin-left: 2rem;
+             }
+           }
+         }
+     
+         &__content{
+            padding: 0 3rem;
+   
+           &__title{
+            font-family : Sarabun-Regular;
+            font-size : 2rem;
+            color : #414042;
+            text-align: center;
+            span{
+               color: #EA5133;
+            }
+           }
+   
+           &__wizard{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3rem;
+   
+            &__wizard2{
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               margin-top: 2rem;
+            }
+   
+            &__bar{
+               width: 6rem;
+            }
+   
+            &__card{
+   
+               &__number{
+   
+                  &__pic{
+                     width: 5rem;
+                  }
+               }
+   
+               &__text{
+                  font-family : Sarabun-SemiBold;
+                  font-size : 1.5rem;
+                  text-align: center;
+                  color: #EA5133;
+               }
+               &__text2{
+                  font-family : Sarabun-SemiBold;
+                  font-size : 1.5rem;
+                  text-align: center;
+                  color: #E51A7A;
+               }
+   
+            }
+   
+           }
+         }
+   
+         &__container{
+   
+            &__form{
+               margin-top: 2rem;
+               padding: 0 3rem;
+            }
+   
+            &__check{
+               margin-top: 3rem;
+               
+               &__option{
+                  text-align: left;
+                  font-family : Sarabun-Regular;
+                  font-size : 1.5rem !important;
+                  color : #414042 !important;
+                  margin-top: .5rem;
+                  padding: 0 3rem;
+               }
+   
+               &__option2{
+                  text-align: left;
+                  font-family : Sarabun-SemiBold;
+                  font-size : 1.5rem;
+                  color : #414042;
+                  margin-top: 2rem;
+                  padding: 0 3rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  &__radio{
+                     &__pic{
+                        cursor: pointer;
+                        width: 2.5rem;
+                        margin-right: .5rem;
+                     }
+                  }
+               }
+
+               &__option3{
+                  text-align: left;
+                  font-family : Sarabun-SemiBold;
+                  font-size : 1.5rem;
+                  color : #414042;
+                  margin-top: 2rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  &__radio{
+                     &__pic{
+                        cursor: pointer;
+                        width: 2.5rem;
+                        margin-right: .5rem;
+                     }
+                  }
+               }
+               
+            }
+   
+            &__button{
+               text-align: center;
+               margin: 5rem 0;
+            }
+   
+            &__questionary{
+               &__answer{
+                  margin-top: 3rem;
+                  padding: 0 3rem;
+                  display: flex;
+   
+                  &__number{
+                     margin-right: 2rem;
+   
+                     &__pic{
+                        width: 3rem;
+                     }
+                     &__pic2{
+                        width: 4rem;
+                     }
+                  }
+   
+                  &__cont{
+                     width: 100%;
+   
+                     &__text{
+                        font-family : Sarabun-Regular;
+                        font-size : 2rem;
+                        color : #414042;
+                     }
+   
+                     &__options{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                     }
+                  }
+               }
+            }
+   
+            &__result{
+               padding: 0 3rem;
+   
+               &__banner{
+                  background: #e94258;
+                  font-family : Sarabun-SemiBold;
+                  font-size : 2.5rem;
+                  color: #FFFFFF;
+                  text-align: center;
+                  padding: 2rem 1.5rem;
+                  border-radius: 20px;
+                  margin-top: 5rem;
+                  line-height: 25px;
+               }
+   
+               &__video{
+                  padding: 6rem 0;
+                  background-image: url("/assets/images/videoback.png");
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  text-align: center;
+   
+                  &__image{
+                     width: 100%;
+                  }
+               }
+   
+               &__question{
+                  font-family : Sarabun-SemiBold;
+                  font-size : 2.5rem;
+                  color: #EC6145;
+                  text-align: center;
+                  padding: 3rem 0rem;
+                  line-height: 30px;
+               }
+            }
+         }
+       }
+   }
+}

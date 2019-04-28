@@ -1,0 +1,121 @@
+<div class="ui stackable no-margin main-content__no-logged" *ngIf="isLarge">
+  <div class="ui large stackable secondary pointing menu nomobile grid main-content__no-logged__banner no-margin">
+    <div class="main-content__no-logged__banner__left">
+      <a href="/auth/landing/">
+        <img class="ui spaced image main-content__no-logged__banner__logo" src="/assets/images/LogoMO.png">
+      </a>
+      <div class="main-content__no-logged__banner__itemMenu" (click)="scroll2('works')">
+        <a routerLinkActive="active-active" 
+        class="item main-content__no-logged__banner__menu-option">
+          How MO Works
+        </a>
+      </div>
+      <div class="main-content__no-logged__banner__itemMenu" (click)="scroll2('faq')">
+        <a routerLinkActive="active-active" 
+        class="item main-content__no-logged__banner__menu-option">
+          FAQ
+        </a>
+      </div>
+      <div class="main-content__no-logged__banner__itemMenu" (click)="scroll2('contact')">
+        <a routerLinkActive="active-active" 
+        class="item main-content__no-logged__banner__menu-option">
+          Contact Us
+        </a>
+      </div>
+    </div>
+    <div class="main-content__no-logged__banner__right">
+      <div class="main-content__no-logged__banner__right__item">
+        <button class="button__landing__banner__login" (click)="goToLogin()">
+          LOG IN
+        </button>
+      </div>
+      <div class="main-content__no-logged__banner__right__item">
+        <button class="button__landing__banner__request" (click)="request()">
+          REQUEST CASH
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="main-content__no-logged__page">
+    <div *ngIf="isLarge" class="forgot">
+      <div class="forgot__main" *ngIf="wizard < 2">
+        <div class="forgot__main__box">
+          <div class="forgot__main__box__title">
+            FORGOT PASSWORD
+          </div>
+          <div class="forgot__main__box__form" *ngIf="wizard == 0">
+            <form [formGroup]="forgotForm" (ngSubmit)="forgot()">
+              <div>
+                <label class="label-input">Enter your phone</label>
+                <div class="ui input field inputField forgot__main__box__form__input">
+                  <input type="text" name="username" formControlName="username" [(ngModel)]="auth.number" placeholder="">
+                </div>
+              </div>
+              <div class="ui hidden divider"></div>
+            </form>
+            <div class="forgot__main__box__form__footer">
+              <div class="forgot__main__box__form__footer__button">
+                <button class="button__landing__banner__signin" [disabled]="forgotForm.invalid" (click)="step_one()">
+                  NEXT
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="forgot__main__box__form" *ngIf="wizard == 1">
+            <div class="forgot__main__box__sub">
+                We can help you restore your password
+            </div>
+            <form [formGroup]="forgotForm2" (ngSubmit)="step_two()">
+              <div>
+                <label class="label-input">Confirmation code</label>
+                <div class="ui input field inputField forgot__main__box__form__input">
+                  <input type="text" name="code" formControlName="code"  [(ngModel)]="auth.code" placeholder="">
+                </div>
+              </div>
+              <div class="ui hidden divider"></div>
+              <div>
+                <label class="label-input">New password</label>
+                <div class="ui input field inputField forgot__main__box__form__input">
+                  <input type="password" name="password" formControlName="password" [(ngModel)]="auth.password" placeholder="">
+                </div>
+              </div>
+              <div class="ui hidden divider"></div>
+              <div>
+                <label class="label-input">Confirm password</label>
+                <div class="ui input field inputField forgot__main__box__form__input">
+                  <input type="password" name="password2" formControlName="password2" [(ngModel)]="auth.password2" placeholder="">
+                </div>
+              </div>
+              <div class="ui hidden divider"></div>
+            </form>
+            <div class="forgot__main__box__form__footer">
+              <div class="forgot__main__box__form__footer__button">
+                <button class="button__landing__banner__signin" [disabled]="forgotForm2.invalid" (click)="step_two()">
+                  RESTORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="wizard == 2" class="forgot__main__congrat">
+        <div class="forgot__main__congrat__content">
+          <div class="forgot__main__congrat__title">
+              Your password has been<br> 
+              successfully updated, you<br> 
+              can log in again.
+          </div>
+          <div>
+            <button class="button__landing__banner__request-big2" (click)="finish()">
+              CONTINUE
+            </button>
+          </div>
+        </div>
+        <div class="forgot__main__congrat__coins">
+          <img class="forgot__main__congrat__coins__pic" src="/assets/images/maincoins.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

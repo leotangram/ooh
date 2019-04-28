@@ -1,0 +1,241 @@
+@import './src/sass/variables';
+
+.login{
+  height: 100%;
+
+  &__main{
+    height: 88%;
+    background-image: url("/assets/images/loginmainback.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__first{
+      padding: 5rem 8rem !important;
+      height: 100%;
+
+
+      &__text{
+        font-family : Sarabun-SemiBold;
+        font-size : 10rem;
+        line-height : 90.14px;
+        color: #E51A7A;
+        margin-bottom: 4rem;
+        span{
+          color : #FC5424;
+        }
+      }
+
+      &__sub{
+        font-family : Sarabun-Regular;
+        font-size : 2.5rem;
+        line-height : 28px;
+        color : #414042;
+      }
+
+      &__promo{
+        margin: 4rem 0;
+
+        &__facebook{
+            cursor: pointer;
+          font-family: Sarabun-Bold;
+          text-align: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius : 10px;
+          border: none;
+            background: #3b5998;
+            color: #FFFFFF;
+            padding: 1rem 2rem;
+            font-size: 2rem;
+            letter-spacing : 0.48px;
+            width: 65%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            &__logo{
+              width: 2.5rem;
+            }
+        }
+
+        &__google{
+          cursor: pointer;
+          font-family: Sarabun-Bold;
+          text-align: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius : 10px;
+          border: none;
+          background: #DB4437;
+          color: #FFFFFF;
+          padding: 1rem 2rem;
+          font-size: 2rem;
+          letter-spacing : 0.48px;
+          width: 65%;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &__logo{
+            width: 2.5rem;
+          }
+        }
+      }
+
+    }
+
+    &__second{
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+
+      &__header{
+        height: 15rem;
+        background: transparent;
+      }
+      
+      &__form{
+        padding: 2rem 6rem;
+
+        &__input{
+          width: 100%;
+
+          &__input{
+            font-size: 2.5rem !important;
+            padding-left: 0 !important;
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: #FC5424 !important;
+              opacity: 1; /* Firefox */
+            }
+          }
+        }
+
+        &__forgot{
+          font-family : Sarabun-Regular;
+          font-size : 2rem;
+          margin: 1rem 0px;
+          line-height : 21px;
+          color : #E51A7A;
+        }
+      }
+
+      &__bottom{
+        padding: 0 6rem;
+        padding-bottom: 0 !important;
+        text-align: right;
+
+        &__text{
+          font-family : Sarabun-Regular;
+          font-size : 2rem;
+          margin: 1rem 0px;
+          line-height : 21px;
+          color : #414042;
+        }
+
+        &__button{
+          margin-bottom: 2rem;
+        }
+
+      }
+
+      &__image{
+        margin-bottom: 8rem;
+
+        &__pic{
+          width: 60rem;
+        }
+      }
+      
+    }
+  }
+
+  &__footer{
+    height: 12%;
+    background: #F1F2F2;
+
+    &__title{
+      font-family : Sarabun-Bold;
+      font-size : 2rem;
+      margin: 4rem 0px;
+      line-height : 21px;
+      color : #414042;
+    }
+
+    &__content{
+      font-family : Sarabun-Regular;
+      font-size : 1.7rem;
+      line-height : 30px;
+      color : #414042;
+
+      &__content2{
+        font-family : Sarabun-Regular;
+        font-size : 1.7rem;
+        line-height : 30px;
+        color : #414042;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+ 
+}
+
+.mobile{
+  margin-top: 6rem;
+  
+  &__login{
+    position: relative;
+
+      &__text{
+        font-family: Sarabun-ExtraBold;
+        font-size: 4.5rem;
+        line-height: 40.14px;
+        color: #E51A7A;
+        padding: 0rem 2rem;
+        padding-top: 4rem !important; 
+        text-align: center;
+        span{
+          color : #FC5424;
+        }
+      }
+
+      &__sub{
+        font-family: Sarabun-Regular;
+        font-size: 2rem;
+        padding: 0 2rem;
+        line-height: 20px;
+        color: #414042;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      &__promo-con{
+        background-image: url("/assets/images/mainbackmob.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &__promo{
+        padding: 2rem;
+        text-align: center;
+      }
+
+      &__image{
+        text-align: center;
+
+        &__pic{
+          width: 30rem;
+        }
+      }
+
+      &__button{
+        padding: 2rem;
+        text-align: center;
+      }
+  }
+}
+

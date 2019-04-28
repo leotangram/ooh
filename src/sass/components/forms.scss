@@ -1,0 +1,252 @@
+.ui.form input:not([type]),
+.ui.form input[type='date'],
+.ui.form input[type='datetime-local'],
+.ui.form input[type='email'],
+.ui.form input[type='file'],
+.ui.form input[type='number'],
+.ui.form input[type='password'],
+.ui.form input[type='search'],
+.ui.form input[type='tel'],
+.ui.form input[type='text'],
+.ui.form input[type='time'],
+.ui.form input[type='url'],
+
+textarea {
+  font-family: Sarabun-Regular !important;
+  font-size: 1.8rem !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  // border-bottom: 1px solid $primary-grey;
+}
+
+textarea {
+  font-family: Sarabun-Regular !important;
+  font-size: 2.2rem !important;
+  border: none !important;
+  padding: 1.2rem !important;
+  border-radius: 0 !important;
+  background: #F1F2F2 !important;
+  color: #EC6145;
+  width: 100% !important;
+  height: 12rem;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #EC6145;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: #EC6145;  
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: #EC6145;  
+}
+
+textarea:-ms-input-placeholder {
+  color: #EC6145;  
+}
+
+textarea::placeholder {
+  color: #EC6145;  
+}
+
+.ui.form input[type='select'] {
+  background: white !important;
+}
+.ion-col {
+  padding: 0px !important;
+}
+
+.formContainerInput{
+   margin-bottom: 4rem;
+}
+
+.item-ios,
+.item-md {
+  padding: 0px !important;
+}
+input[type='text']:focus {
+  border-color: $secondary-color;
+}
+.input-wrapper {
+  height: 7.2rem !important;
+}
+
+.ion-item {
+  background: transparent !important;
+}
+
+.ui.input:not(.disabled) input[disabled] {
+  pointer-events: none;
+  background: #EBEBEB !important;
+  border: 1px solid #C7C7C7 !important;
+}
+
+input {
+  width: 100%;
+  height: 5rem !important;
+  background: transparent !important;
+  border-bottom: 2px solid #EC6145 !important;
+  border-radius: 0 !important;
+
+  font-family: Sarabun-Regular !important;
+  font-size: 2.2rem !important;
+  color: #444345 !important;
+  letter-spacing: 0 !important;
+}
+
+.ui.input input{
+  border-left:  none !important;
+  border-top:  none !important;
+  border-right:  none !important;
+}
+
+.label-input {
+  font-family: Sarabun-Medium;
+  font-size: 2.5rem;
+  color: #EC6145;
+  letter-spacing: -0.3px;
+  text-align: left;
+  display: block;
+
+  margin: 1rem 0rem;
+}
+
+.label-input2 {
+  font-family: Sarabun-Medium;
+  font-size: 2.5rem;
+  color: #EC6145;
+  letter-spacing: -0.3px;
+  text-align: left;
+  display: block;
+
+  margin-bottom: 1.5rem;
+}
+
+.label-input3 {
+  font-family: Sarabun-Medium;
+  font-size: 2.5rem;
+  color: #EC6145;
+  letter-spacing: -0.3px;
+  text-align: left;
+  display: block;
+}
+
+.label-under-input {
+  display: block;
+  margin-top: 1rem;
+  font-family: Sarabun-Medium;
+  font-size: 1.3rem;
+  color: #BBBBBB;
+  letter-spacing: -0.26px;
+  text-align: left;
+
+  span{
+    color: #1DC1C1;
+  }
+}
+
+.inputField{
+  display: block;
+  position: relative;
+
+  &__tooltip{
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    right: -3rem;
+
+    &__pic{
+      width: 2rem;
+    }
+  }
+
+  &__tooltip2{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0rem;
+    left: 13rem;
+
+    &__pic{
+      width: 2rem;
+    }
+  }
+
+  &__tooltip3{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0rem;
+    left: 10rem;
+
+    &__pic{
+      width: 2rem;
+    }
+  }
+
+  &__tooltip4{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0rem;
+    left: 19rem;
+
+    &__pic{
+      width: 2rem;
+    }
+  }
+}
+
+.hideShow{
+  cursor: pointer;
+  position: absolute;
+  top:1.4rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+
+  font-family: Sarabun-Medium;
+  font-size: 1.2rem;
+  color: #8D8D8D;
+  letter-spacing: -0.26px;
+  text-align: center;
+
+  &__image{
+    width: 2rem;
+  }
+
+  &__pic{
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+  }
+}
+
+.item-ios.item-input.item-input-has-focus .item-inner,
+.item-ios.item-input.input-has-focus .item-inner {
+  box-shadow: none !important;
+  border-bottom-color: $primary-grey;
+}
+
+.item-md.item-input.item-input-has-focus .item-inner,
+.item-md.item-input.input-has-focus .item-inner {
+  box-shadow: none !important;
+  border-bottom-color: $primary-grey;
+}
+
+.valid {
+  label {
+    color: green !important;
+  }
+  .item-inner {
+    border-bottom-color: green !important;
+  }
+}
+.invalid {
+  .label-input {
+    color: red !important;
+  }
+  .item-inner {
+    border-bottom-color: red !important;
+  }
+}

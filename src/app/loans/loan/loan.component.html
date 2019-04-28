@@ -1,0 +1,90 @@
+
+<div class="dashboard" >
+   <div class="dashboard__main ui column row grid no-margin no-padding" *ngIf="state == 0">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column">
+         <div class="dashboard__main__text">
+            ¡Estamos a <span>un paso!</span>
+         </div>
+         <div class="dashboard__main__progress">
+            <img class="dashboard__main__progress__pic" src="/assets/images/dashprogress.png">
+         </div>
+         <div class="dashboard__main__sub">
+            Para iniciar el proceso de diseño, antes debemos estar seguros que 
+            contamos con la información necesaria para que su
+            contenido sea realmente lo que necesita.
+            <br>
+            <br>
+            <b><u>Estado:</u></b> <span>Revisión de cuenta.</span>
+         </div>
+         <div class="dashboard__main__image">
+            <img class="dashboard__main__image__pic" src="/assets/images/girl.png">
+         </div>
+      </div>
+      <div class="one wide column"></div>
+   </div>
+   <div class="dashboard__main ui column row grid no-margin no-padding" *ngIf="state == 1">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column dashboard__main__center">
+         <div class="dashboard__main__text2">
+            Bienvenid@<br> 
+            <span>a tu gestor de contenido.</span>
+         </div>
+         <div class="dashboard__main__sub2">
+               En la sección de Publicaciones encentras el contenido
+               par aaporbación, en reportes el diagnóstico inicial de
+               tus redeso sociales o página web y en el perfil de la
+               empresa puedes actualizar tu infroamción cauntas
+               veces quieras.
+            <br>
+            <br>
+         </div>
+      </div>
+      <div class="one wide column"></div>
+   </div>
+   <div class="dashboard__footer ui column row grid no-margin no-padding">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column">
+         <div class="dashboard__footer__content__content2 align-center">
+            Términos y condiciones    -   Política de privacidad<br>
+            ivity © 2019 All Rights Reserved
+         </div>
+      </div>
+      <div class="one wide column"></div>
+   </div> 
+</div>
+
+<ng-template let-context let-modal="modal" #modalInfo>
+   <div class="content modalContent no-padding">
+     <div class="modalContent__dot">
+       <img class="modalContent__dot__pic" src="/assets/images/dot.png">
+     </div>
+     <div class="modalContent__sub">
+         Si desea continuar con el formulario<br> 
+         de información adicional lo puede<br> 
+         hacer ahora para que conozcamos<br> 
+         mejor sobre su compañía.
+     </div>
+     <div class="modalContent__banner__cont">
+       <div class="modalContent__banner">
+         Continuar con formulario de
+         información adicional
+       </div>
+     </div>
+     <div class="modalContent__banner__cont">
+       <div class="modalContent__banner">
+           En otro momento
+       </div>
+     </div>
+     <div class="modalContent__redes">
+         Visítenos en nuestras redes sociales
+     </div>
+     <div class="modalContent__redescont">
+       <img class="modalContent__redescont__image" src="/assets/images/instagram.png">
+       <img class="modalContent__redescont__image" src="/assets/images/facebook.png">
+       <img class="modalContent__redescont__image" src="/assets/images/twitter.png">
+     </div>
+     
+   </div>
+ </ng-template>
+ 

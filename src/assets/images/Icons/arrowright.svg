@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.74656235,8.7465916 C6.44206593,9.05971278 6.44293321,9.56827437 6.75455177,9.88871942 L6.5786969,9.70788352 C6.88760576,10.0255421 7.38584414,10.0282176 7.69766696,9.70756254 L11.7164233,5.57497624 C12.0255046,5.25714038 12.0282461,4.74464585 11.7164233,4.42399076 L7.69766696,0.291404458 C7.38858572,-0.0264314078 6.89031546,-0.0293615671 6.5786969,0.291083481 L6.75455177,0.110247584 C6.44564291,0.427906179 6.44898908,0.946373469 6.74656235,1.2523754 L9.72379588,4.31393808 L0.795739028,4.31393808 C0.356264498,4.31393808 0,4.67417606 0,5.1115073 L0,4.8874597 C0,5.32794502 0.357607159,5.68502892 0.795739028,5.68502892 L9.72379588,5.68502892 L6.74656235,8.7465916 Z" id="path-1"></path>
+    </defs>
+    <g id="Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home---Activar-tarjeta" transform="translate(-795.000000, -560.000000)">
+            <g id="Group-3" transform="translate(409.000000, 326.000000)">
+                <g id="Group-2" transform="translate(0.000000, 204.000000)">
+                    <g id="Arrow" transform="translate(377.000000, 19.000000)">
+                        <g transform="translate(9.000000, 11.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Combined-Shape-2" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

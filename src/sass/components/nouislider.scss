@@ -1,0 +1,88 @@
+.noUi-value{
+    font-family: Sarabun-Bold !important;
+    font-size: 1.4rem !important;
+    color: #25364B !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+}
+
+.noUi-tooltip{
+    font-family: Sarabun-Bold;
+    font-size: 3rem;
+    color: #25364B;
+    letter-spacing: -1.44px;
+    text-align: left;
+    border: none;
+    background: transparent;
+}
+
+.noUi-handle {
+    border-radius: 0px !important;
+}
+
+.noUi-connect{
+    background-image: linear-gradient(-225deg, #1DC1C1 0%, #1DC1C1 100%);
+    border-radius: 0px 0 0 0px;
+    height: 5rem;
+
+}
+
+.noUi-base{
+    height: 10px;
+}
+
+.noUi-horizontal{
+    height: 5rem !important;
+}
+
+.noUi-target{
+    border-radius: 0px !important;
+    background-image: url('/assets/images/barback.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 !important;
+    box-shadow: inset 0 0px 0px #F0F0F0, 0 0px 0px 0px #BBB !important;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 3.7rem !important;
+    height: 7.6rem !important;
+    // left: 0px !important;
+    left: -1.5rem !important;
+    top: -.5rem !important;
+    // border: 1px solid #149F9F;
+    border: none !important;
+    background: transparent;
+    // background: #149F9F;
+    background-image: url('/assets/images/bararrow.png') !important;
+    background-size: cover;
+    box-shadow: none !important;
+}
+
+.noUi-horizontal:focus .noUi-handle:focus {
+    outline:0 !important;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+    display: none !important;
+}
+
+.noUi-pips{
+    font-family: Sarabun-Bold !important;
+    font-size: 1.4rem !important;
+    color: #25364B !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+}
+
+.noUi-pips-horizontal {
+    padding: 0 !important;
+}
+
+.noUi-marker-horizontal.noUi-marker {
+    height: 0 !important;
+}
+
+.noUi-marker-horizontal.noUi-marker { 
+    height: 0 !important;
+}

@@ -1,0 +1,889 @@
+
+<div class="profile" >
+  <div class="profile__main ui column row grid no-margin no-padding" *ngIf="state == 0">
+     <div class="two wide column"></div>
+     <div class="twelve wide column">
+        <div class="profile__main__text">
+           <span>Nombre de la empresa</span>
+        </div>
+        <div class="profile__main__text2__container">
+          <div class="profile__main__text2">
+            Sector: <span>Agro</span>
+          </div>
+          <div class="profile__main__text2">
+            Subsector: <span>Insumos</span>
+          </div>
+          <div class="profile__main__text2">
+            Tono: <span>Alegre</span>
+          </div>
+        </div>
+        <div class="profile__main__text2__container2">
+          <div class="profile__main__text2">
+            Tiempo de operación: <span>3 años</span>
+          </div>
+        </div>
+
+        <div class="profile__main__container">
+          <div class="profile__main__container__box__active" (click)="changeState(0)">
+            Canales<br> 
+            digitales
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(1)">
+            Productos <br> 
+            y servicios
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(2)">
+            Canales de<br> 
+            venta
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(3)">
+            Contacto
+          </div>
+        </div>
+        <div class="profile__main__container">
+          <div class="profile__main__container__box" (click)="changeState(4)">
+            Grupo<br> 
+            objetivo
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(5)">
+            Material <br> 
+            gráfico
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(6)">
+            Eventos y<br> 
+            agenda
+          </div>
+        </div>
+        
+        <div class="profile__main__row">
+          <div class="profile__main__row__title">
+            <span>Web</span>
+          </div>
+          <div class="profile__main__row__sub">
+            www.misitio.com
+          </div>
+        </div>
+        <div class="profile__main__row2">
+          <div class="profile__main__row__title">
+            Redes sociales
+          </div>
+          <div class="profile__main__row2__sub">
+              Active las 2 cuentas donde<br>
+              usted quiera publicar
+          </div>
+        </div>
+        <div class="profile__main__row3">
+          <div class="profile__main__row3__one">
+            <div class="profile__main__row3__one__image">
+              <img class="profile__main__row3__one__image__pic" src="/assets/images/faceicon.png">
+            </div>
+            <div class="profile__main__row3__sub">
+              Facebook account
+            </div>
+          </div>
+          <div class="profile__main__row3__two">
+            <div class="profile__main__row3__two__toggle">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="profile__main__row3__two__image">
+              <img class="profile__main__row3__two__image__pic" src="/assets/images/keyoff.png">
+            </div>
+          </div>
+        </div>
+        <div class="profile__main__row3">
+          <div class="profile__main__row3__one">
+            <div class="profile__main__row3__one__image">
+              <img class="profile__main__row3__one__image__pic" src="/assets/images/igicon.png">
+            </div>
+            <div class="profile__main__row3__sub">
+              Instagram account
+            </div>
+          </div>
+          <div class="profile__main__row3__two">
+            <div class="profile__main__row3__two__toggle">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="profile__main__row3__two__image">
+              <img class="profile__main__row3__two__image__pic" src="/assets/images/keyoff.png">
+            </div>
+          </div>
+        </div>
+        <div class="profile__main__row3">
+          <div class="profile__main__row3__one">
+            <div class="profile__main__row3__one__image">
+              <img class="profile__main__row3__one__image__pic" src="/assets/images/linicon.png">
+            </div>
+            <div class="profile__main__row3__sub">
+              LinkedIn account
+            </div>
+          </div>
+          <div class="profile__main__row3__two">
+            <div class="profile__main__row3__two__toggle">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="profile__main__row3__two__image">
+              <img class="profile__main__row3__two__image__pic" src="/assets/images/keyoff.png">
+            </div>
+          </div>
+        </div>
+        <div class="profile__main__row3">
+          <div class="profile__main__row3__one">
+            <div class="profile__main__row3__one__image">
+              <img class="profile__main__row3__one__image__pic" src="/assets/images/twittericon.png">
+            </div>
+            <div class="profile__main__row3__sub">
+              Twitter account
+            </div>
+          </div>
+          <div class="profile__main__row3__two">
+            <div class="profile__main__row3__two__toggle">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="profile__main__row3__two__image">
+              <img class="profile__main__row3__two__image__pic" src="/assets/images/keyoff.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="profile__main__dots">
+          <img class="profile__main__dots__image__pic" src="/assets/images/doton.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+        </div>
+     </div>
+     <div class="two wide column"></div>
+  </div>
+  <div class="profile__main ui column row grid no-margin no-padding" *ngIf="state == 1">
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="profile__main__text">
+          <span>Nombre de la empresa</span>
+        </div>
+        <div class="profile__main__text2__container">
+          <div class="profile__main__text2">
+            Sector: <span>Agro</span>
+          </div>
+          <div class="profile__main__text2">
+            Subsector: <span>Insumos</span>
+          </div>
+          <div class="profile__main__text2">
+            Tono: <span>Alegre</span>
+          </div>
+        </div>
+        <div class="profile__main__text2__container2">
+          <div class="profile__main__text2">
+            Tiempo de operación: <span>3 años</span>
+          </div>
+        </div>
+
+        <div class="profile__main__container">
+          <div class="profile__main__container__box" (click)="changeState(0)">
+            Canales<br> 
+            digitales
+          </div>
+          <div class="profile__main__container__box__active" (click)="changeState(1)">
+            Productos <br> 
+            y servicios
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(2)">
+            Canales de<br> 
+            venta
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(3)">
+            Contacto
+          </div>
+        </div>
+        <div class="profile__main__container">
+          <div class="profile__main__container__box" (click)="changeState(4)">
+            Grupo<br> 
+            objetivo
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(5)">
+            Material <br> 
+            gráfico
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(6)">
+            Eventos y<br> 
+            agenda
+          </div>
+        </div>
+        
+        <div class="profile__main__row4">
+          <div class="profile__main__row4__title">
+            Usted vende
+          </div>
+          <div class="profile__main__options">
+            <div class="profile__main__options__check__option2">
+              <div class="profile__main__options__check__option2__radio">
+                <img *ngIf="sell != 0" (click)="sellClick(0)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                <img *ngIf="sell == 0" (click)="sellClick(0)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+              </div>
+                Productos
+            </div>
+            <div class="profile__main__options__check__option2">
+              <div class="profile__main__options__check__option2__radio">
+                <img *ngIf="sell != 1" (click)="sellClick(1)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                <img *ngIf="sell == 1" (click)="sellClick(1)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+              </div>
+                Servicios
+            </div>
+            <div class="profile__main__options__check__option2">
+              <div class="profile__main__options__check__option2__radio">
+                <img *ngIf="sell != 2" (click)="sellClick(2)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                <img *ngIf="sell == 2" (click)="sellClick(2)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+              </div>
+                Productos y Servicios
+            </div>
+          </div>
+        </div>
+
+        <div class="profile__main__row4">
+          <div class="profile__main__row4__title2">
+            Descripción corta
+          </div>
+          <div class="profile__main__row4__area">
+            <div>
+              <div class="input field inputField login__main__box__form__input">
+                <textarea placeholder=""></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile__main__row4">
+          <div class="profile__main__row4__title">
+            Sus productos
+          </div>
+
+          <sui-accordion class="fluid">
+            <sui-accordion-panel>
+              <div title class="profile__main__item">
+                <div class="profile__main__item__button">
+                  Producto 1
+                </div>
+                <div class="profile__main__item__arrow">
+                  <i class="dropdown icon profile__main__item__arrow__pic"></i>
+                </div>
+              </div>
+              <div content>
+                <div class="profile__main__item__input">
+                  <label class="label-input">Nombre del producto</label>
+                  <div class="ui input field inputField login__main__second__form__input">
+                    <input class="login__main__second__form__input__input" type="text" name="product" placeholder="">
+                  </div>
+                </div>
+                <div class="profile__main__item__photo">
+                  <div class="profile__main__item__photo__container">
+                    Foto
+                  </div>
+                  <div class="profile__main__item__photo__button">
+                    <img class="profile__main__item__photo__button__pic" src="/assets/images/plus.png">
+                  </div>
+                </div>
+                <div class="profile__main__item__part1">
+                  <div class="profile__main__item__part1__container">
+                    <div class="profile__main__item__part1__title">
+                      Precio por unidad
+                    </div>
+                    <div class="profile__main__item__part1__title">
+                      <div class="ui input field inputField login__main__second__form__input">
+                        <input class="profile__main__item__part1__input" type="text" name="product" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile__main__item__part1__select">
+                    <sui-select class="profile__main__item__part1__select__input" placeholder="Seleccione">
+                      <sui-select-option class="profile__main__item__part1__select__input__option" value="Unidad"></sui-select-option>
+                      <sui-select-option class="profile__main__item__part1__select__input__option" value="Litro"></sui-select-option>
+                      <sui-select-option class="profile__main__item__part1__select__input__option" value="Kilo"></sui-select-option>
+                      <sui-select-option class="profile__main__item__part1__select__input__option" value="Caja"></sui-select-option>
+                    </sui-select>
+                  </div>
+                </div>
+                <div class="profile__main__item__part2">
+                  <div class="profile__main__item__part2__container">
+                    <div class="profile__main__item__part2__title">
+                      Descripción
+                    </div>
+                    <div class="profile__main__item__part2__area">
+                      <div>
+                        <div class="input field inputField login__main__box__form__input">
+                          <textarea placeholder=""></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="profile__main__item__part3">
+                  <div class="profile__main__item__part2__title">
+                    Especificaciones
+                  </div>
+                  <div class="profile__main__item__part3__container">
+                    <div>
+                      <div class="profile__main__item__part3__title">
+                        Talla
+                      </div>
+                      <div class="profile__main__item__part3__title">
+                        <div class="ui input field inputField login__main__second__form__input">
+                          <input class="profile__main__item__part3__input" type="text" name="product" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="profile__main__item__part3__title">
+                        Color
+                      </div>
+                      <div class="profile__main__item__part3__title">
+                        <div class="ui input field inputField login__main__second__form__input">
+                          <input class="profile__main__item__part3__input" type="text" name="product" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="profile__main__item__part3__title">
+                        Tamaño
+                      </div>
+                      <div class="profile__main__item__part3__title">
+                        <div class="ui input field inputField login__main__second__form__input">
+                          <input class="profile__main__item__part3__input" type="text" name="product" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="profile__main__item__part4">
+                  <div class="profile__main__item__part4__button">
+                    <button class="button__landing__banner__account">
+                      Guardar
+                    </button>
+                  </div>
+                </div> 
+              </div>
+            </sui-accordion-panel>
+
+            <sui-accordion-panel>
+              <div title class="profile__main__item">
+                <div class="profile__main__item__button">
+                  Producto 2
+                </div>
+                <div class="profile__main__item__arrow">
+                  <i class="dropdown icon profile__main__item__arrow__pic"></i>
+                </div>
+              </div>
+              <div content>
+                <div class="profile__main__item__input">
+                  <label class="label-input">Nombre del producto</label>
+                  <div class="ui input field inputField login__main__second__form__input">
+                    <input class="login__main__second__form__input__input" type="text" name="product" placeholder="">
+                  </div>
+                </div>
+                <div class="profile__main__item__photo">
+                  <div class="profile__main__item__photo__container">
+                    Foto
+                  </div>
+                  <div class="profile__main__item__photo__button">
+                    <img class="profile__main__item__photo__button__pic" src="/assets/images/plus.png">
+                  </div>
+                </div>
+                <div class="profile__main__item__part1">
+                  <div class="profile__main__item__part1__container">
+                    <div class="profile__main__item__part1__title">
+                      Precio por unidad
+                    </div>
+                    <div class="profile__main__item__part1__title">
+                      <div class="ui input field inputField login__main__second__form__input">
+                        <input class="profile__main__item__part1__input" type="text" name="product" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile__main__item__part1__select">
+                    <sui-select class="profile__main__item__part1__select__input" placeholder="Seleccione">
+                      <sui-select-option class="profile__main__item__part1__select__input__option" value="Unidad"></sui-select-option>
+                      <sui-select-option class="profile__main__item__part1__select__input__option" value="Litro"></sui-select-option>
+                      <sui-select-option class="profile__main__item__part1__select__input__option" value="Kilo"></sui-select-option>
+                      <sui-select-option class="profile__main__item__part1__select__input__option" value="Caja"></sui-select-option>
+                    </sui-select>
+                  </div>
+                </div>
+                <div class="profile__main__item__part2">
+                  <div class="profile__main__item__part2__container">
+                    <div class="profile__main__item__part2__title">
+                      Descripción
+                    </div>
+                    <div class="profile__main__item__part2__area">
+                      <div>
+                        <div class="input field inputField login__main__box__form__input">
+                          <textarea placeholder=""></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="profile__main__item__part3">
+                  <div class="profile__main__item__part2__title">
+                    Especificaciones
+                  </div>
+                  <div class="profile__main__item__part3__container">
+                    <div>
+                      <div class="profile__main__item__part3__title">
+                        Talla
+                      </div>
+                      <div class="profile__main__item__part3__title">
+                        <div class="ui input field inputField login__main__second__form__input">
+                          <input class="profile__main__item__part3__input" type="text" name="product" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="profile__main__item__part3__title">
+                        Color
+                      </div>
+                      <div class="profile__main__item__part3__title">
+                        <div class="ui input field inputField login__main__second__form__input">
+                          <input class="profile__main__item__part3__input" type="text" name="product" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="profile__main__item__part3__title">
+                        Tamaño
+                      </div>
+                      <div class="profile__main__item__part3__title">
+                        <div class="ui input field inputField login__main__second__form__input">
+                          <input class="profile__main__item__part3__input" type="text" name="product" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="profile__main__item__part4">
+                  <div class="profile__main__item__part4__button">
+                    <button class="button__landing__banner__account">
+                      Guardar
+                    </button>
+                  </div>
+                </div> 
+              </div>
+            </sui-accordion-panel>
+          </sui-accordion>
+
+          <div style="display: flex;align-items: center;">
+            <div class="profile__main__item__photo__button">
+              <img class="profile__main__item__photo__button__pic" src="/assets/images/plus.png">
+            </div>
+            <div style="margin-left:2rem;">
+              <label class="label-input">Agregar otro producto</label>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="profile__main__dots">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/doton.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+        </div>
+    </div>
+    <div class="two wide column"></div>
+  </div>
+  <div class="profile__main ui column row grid no-margin no-padding" *ngIf="state == 2">
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="profile__main__text">
+          <span>Nombre de la empresa</span>
+        </div>
+        <div class="profile__main__text2__container">
+          <div class="profile__main__text2">
+            Sector: <span>Agro</span>
+          </div>
+          <div class="profile__main__text2">
+            Subsector: <span>Insumos</span>
+          </div>
+          <div class="profile__main__text2">
+            Tono: <span>Alegre</span>
+          </div>
+        </div>
+        <div class="profile__main__text2__container2">
+          <div class="profile__main__text2">
+            Tiempo de operación: <span>3 años</span>
+          </div>
+        </div>
+        <div class="profile__main__container">
+          <div class="profile__main__container__box" (click)="changeState(0)">
+            Canales<br> 
+            digitales
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(1)">
+            Productos <br> 
+            y servicios
+          </div>
+          <div class="profile__main__container__box__active" (click)="changeState(2)">
+            Canales de<br> 
+            venta
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(3)">
+            Contacto
+          </div>
+        </div>
+        <div class="profile__main__container">
+          <div class="profile__main__container__box" (click)="changeState(4)">
+            Grupo<br> 
+            objetivo
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(5)">
+            Material <br> 
+            gráfico
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(6)">
+            Eventos y<br> 
+            agenda
+          </div>
+        </div>
+        
+        <div class="profile__main__row4">
+          <div class="profile__main__row4__title3">
+            ¿A través de qué canales sus clientes compran sus
+            productos / servicios?
+          </div>
+          <div class="profile__main__options">
+            <div class="profile__main__options__check__option2">
+              <div class="profile__main__options__check__option2__radio">
+                <img *ngIf="point != 0" (click)="pointClick(0)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                <img *ngIf="point == 0" (click)="pointClick(0)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+              </div>
+                Punto de venta
+            </div>
+            <div class="profile__main__options__check__option2">
+              <div class="profile__main__options__check__option2__radio">
+                <img *ngIf="point != 1" (click)="pointClick(1)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                <img *ngIf="point == 1" (click)="pointClick(1)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+              </div>
+                Online
+            </div>
+            <div class="profile__main__options__check__option2">
+              <div class="profile__main__options__check__option2__radio">
+                <img *ngIf="point != 2" (click)="pointClick(2)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                <img *ngIf="point == 2" (click)="pointClick(2)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+              </div>
+                Otros
+            </div>
+          </div>
+        </div>
+
+        <!-- Punto de venta -->
+        <div *ngIf="point == 0">
+          <div class="profile__main__row5">
+            <div>
+              <label class="label-input2">Nombre del punto de venta:</label>
+              <div class="ui input field inputField login__main__box__form__input" style="width: 100%;">
+                <input type="text" name="marca" [(ngModel)]="marca" placeholder="">
+              </div>
+            </div>
+          </div>
+          <div class="profile__main__row5">
+            <div class="profile__main__point__add">
+              <label class="label-input2">Dirección:</label>
+              <div class="profile__main__item__part1__select" style="margin:0 1rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="Seleccione">
+                  <sui-select-option class="profile__main__item__part1__select__input__option" value="Calle"></sui-select-option>
+                  <sui-select-option class="profile__main__item__part1__select__input__option" value="Carrera"></sui-select-option>
+                  <sui-select-option class="profile__main__item__part1__select__input__option" value="Avenida"></sui-select-option>
+                  <sui-select-option class="profile__main__item__part1__select__input__option" value="Otro"></sui-select-option>
+                </sui-select>
+              </div>
+              <div class="ui input field inputField login__main__box__form__input" style="width: 15%;margin:0 1rem">
+                <input type="text" name="marca" [(ngModel)]="marca" placeholder="">
+              </div>
+              <div class="ui input field inputField login__main__box__form__input" style="width: 15%;margin:0 1rem">
+                <input type="text" name="marca" [(ngModel)]="marca" placeholder="">
+              </div>
+              <div class="ui input field inputField login__main__box__form__input" style="width: 15%;margin:0 1rem">
+                <input type="text" name="marca" [(ngModel)]="marca" placeholder="">
+              </div>
+            </div>
+          </div>
+          <div class="profile__main__row5">
+            <div class="profile__main__point__add">
+              <label class="label-input3">Número de teléfono:</label>
+              <div class="ui input field inputField login__main__box__form__input" style="width: 60%;margin:0 1rem">
+                <input type="text" name="marca" [(ngModel)]="marca" placeholder="">
+              </div>
+            </div>
+          </div>
+          <div class="profile__main__row5">
+            <div>
+              <label class="label-input2">Horario:</label>
+              <div class="profile__main__row4__title3">
+                  Si tiene algunos días que no tiene atención al público solo debe
+                  dejarlo en blanco.
+              </div>
+              <label class="label-input2" style="margin: 3rem 0;">Dia Horas</label>
+            </div>
+            <div class="profile__main__point__add">
+              <label class="label-input2" style="width:20%">Lunes:</label>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+            </div>
+            <div class="profile__main__point__add">
+              <label class="label-input2" style="width:20%">Martes:</label>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+            </div>
+            <div class="profile__main__point__add">
+              <label class="label-input2" style="width:20%">Miercoles:</label>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+            </div>
+            <div class="profile__main__point__add">
+              <label class="label-input2" style="width:20%">Jueves:</label>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+            </div>
+            <div class="profile__main__point__add">
+              <label class="label-input2" style="width:20%">Viernes:</label>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+            </div>
+            <div class="profile__main__point__add">
+              <label class="label-input2" style="width:20%">Sabado:</label>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+            </div>
+            <div class="profile__main__point__add">
+              <label class="label-input2" style="width:20%">Domingo:</label>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+              <div class="profile__main__item__part1__select" style="margin:0 2rem">
+                <sui-select class="profile__main__item__part1__select__input" placeholder="00:00">
+                </sui-select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="point == 1">
+          <div class="profile__main__row5">
+            <div>
+              <label class="label-input2">Página web:</label>
+              <div class="ui input field inputField login__main__box__form__input" style="width: 100%;">
+                <input type="text" name="marca" [(ngModel)]="marca" placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="point == 2">
+          <div class="profile__main__row5">
+            <div class="profile__main__options">
+              <div class="profile__main__options__check__option2">
+                <div class="profile__main__options__check__option2__radio">
+                  <img *ngIf="other != 0" (click)="otherClick(0)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="other == 0" (click)="otherClick(0)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  Ferias
+              </div>
+              <div class="profile__main__options__check__option2">
+                <div class="profile__main__options__check__option2__radio">
+                  <img *ngIf="other != 1" (click)="otherClick(1)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="other == 1" (click)="otherClick(1)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  Volanteo
+              </div>
+              <div class="profile__main__options__check__option2">
+                <div class="profile__main__options__check__option2__radio">
+                  <img *ngIf="other != 2" (click)="otherClick(2)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="other == 2" (click)="otherClick(2)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  LLamadas
+              </div>
+              <div class="profile__main__options__check__option2">
+                <div class="profile__main__options__check__option2__radio">
+                  <img *ngIf="other != 3" (click)="otherClick(3)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="other == 3" (click)="otherClick(3)" class="profile__main__options__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  Whatsapp
+              </div>
+            </div>
+          </div>
+          <div class="profile__main__row5">
+            <div class="profile__main__point__add" style="margin: 2rem;justify-content: center;">
+              <label class="label-input3">Whatsapp:</label>
+              <div class="ui input field inputField login__main__box__form__input" style="width: 60%;margin:0 1rem">
+                <input type="text" name="marca" [(ngModel)]="marca" placeholder="">
+              </div>
+            </div>
+            <div class="profile__main__point__add" style="margin: 2rem;justify-content: center;">
+              <label class="label-input3">Llamadas:</label>
+              <div class="ui input field inputField login__main__box__form__input" style="width: 60%;margin:0 1rem">
+                <input type="text" name="marca" [(ngModel)]="marca" placeholder="">
+              </div>
+            </div>
+            <div class="ui input field inputField login__main__box__form__input" style="width: 100%; margin-top: 3rem;">
+              <textarea placeholder="Describa brevemente cómo y dónde efectua sus eventas."></textarea>
+            </div>
+          </div>
+          <div class="profile__main__item__part4">
+              <div class="profile__main__item__part4__button">
+                <button class="button__landing__banner__account">
+                  Guardar
+                </button>
+              </div>
+            </div> 
+        </div>
+
+        <div class="profile__main__dots">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/doton.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+        </div>
+    </div>
+    <div class="two wide column"></div>
+  </div>
+  <div class="profile__main ui column row grid no-margin no-padding" *ngIf="state == 3">
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+        <div class="profile__main__text">
+          <span>Nombre de la empresa</span>
+        </div>
+        <div class="profile__main__text2__container">
+          <div class="profile__main__text2">
+            Sector: <span>Agro</span>
+          </div>
+          <div class="profile__main__text2">
+            Subsector: <span>Insumos</span>
+          </div>
+          <div class="profile__main__text2">
+            Tono: <span>Alegre</span>
+          </div>
+        </div>
+        <div class="profile__main__text2__container2">
+          <div class="profile__main__text2">
+            Tiempo de operación: <span>3 años</span>
+          </div>
+        </div>
+
+        <div class="profile__main__container">
+          <div class="profile__main__container__box" (click)="changeState(0)">
+            Canales<br> 
+            digitales
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(1)">
+            Productos <br> 
+            y servicios
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(2)">
+            Canales de<br> 
+            venta
+          </div>
+          <div class="profile__main__container__box__active" (click)="changeState(3)">
+            Contacto
+          </div>
+        </div>
+        <div class="profile__main__container">
+          <div class="profile__main__container__box" (click)="changeState(4)">
+            Grupo<br> 
+            objetivo
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(5)">
+            Material <br> 
+            gráfico
+          </div>
+          <div class="profile__main__container__box" (click)="changeState(6)">
+            Eventos y<br> 
+            agenda
+          </div>
+        </div>
+
+        <div class="profile__main__row5"></div>
+        <div class="profile__main__row5">
+          <div>
+            <label class="label-input2">Mail corporativo:</label>
+            <div class="profile__main__row4__title3">
+                info@... servicioalcliente@... contacto@...
+            </div>
+          </div>
+        </div>
+        <div class="profile__main__row5">
+          <div>
+            <label class="label-input2">Dirección:</label>
+            <div class="profile__main__row4__title3">
+                Cll 132 #20-56 Bogotá, Cundinamarca.
+            </div>
+          </div>
+        </div>
+        <div class="profile__main__row5">
+          <div>
+            <label class="label-input2">Whatsapp:</label>
+            <div class="profile__main__row4__title3">
+                +57 (312) 4560998
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="profile__main__dots">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/doton.png">
+          <img class="profile__main__dots__image__pic" src="/assets/images/dotoff.png">
+        </div>
+    </div>
+    <div class="two wide column"></div>
+  </div>
+</div>

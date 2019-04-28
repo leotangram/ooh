@@ -1,0 +1,173 @@
+.modalContent{
+   position: relative;
+
+   &__dot{
+      text-align: center;
+      margin-top: 3rem;
+
+      &__pic{
+         width: 2rem;
+      }
+
+      &__pic2{
+         width: 6rem;
+      }
+
+      &__pic3{
+         width: 10rem;
+      }
+   }
+
+   &__text{
+      font-family : Sarabun-SemiBold;
+      font-size : 3rem;
+      color: #EA5133;
+      text-align: center;
+      margin: 3rem;
+   }
+
+   &__text2{
+      font-family : Sarabun-SemiBold;
+      font-size : 2.5rem;
+      color: #414042;
+      text-align: center;
+      margin: 3rem;
+   }
+
+   &__text3{
+      font-family : Sarabun-SemiBold;
+      font-size : 2.5rem;
+      color: #8d8e91;
+      text-align: center;
+      margin: 3rem;
+      span{
+         color: #E51A7A;
+      }
+   }
+
+   &__horizontal{
+      margin: 2rem;
+      text-align: center;
+      &__pic{
+         width: 80%;
+      }
+   }
+
+   &__later{
+      font-family : Sarabun-Regular;
+      font-size : 2rem;
+      color: #E51A7A;
+      text-align: center;
+      margin: 1rem;
+   }
+
+   &__again{
+      font-family : Sarabun-Regular;
+      font-size : 1.5rem;
+      color: #EA5133;
+      text-align: center;
+      margin: 3rem;
+   }
+
+   &__sub{
+      font-family : Sarabun-Regular;
+      font-size : 2.5rem;
+      text-align: center;
+      color : #414042;
+      line-height: 25px;
+      margin-top: 3rem;
+   }
+
+   &__sub2{
+      font-family : Sarabun-Regular;
+      font-size : 2.5rem;
+      text-align: center;
+      color : #98999b;
+      line-height: 25px;
+      margin-top: 3rem;
+   }
+
+   &__sub4{
+      font-family : Sarabun-Regular;
+      font-size : 2.5rem;
+      text-align: center;
+      color : #EA5133;
+      line-height: 25px;
+      margin: 3rem;
+   }
+
+   &__sub5{
+      background-image: url("/assets/images/backresult.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: -5rem;
+      font-family : Sarabun-SemiBold;
+      font-size : 3rem;
+      text-align: center;
+      color : #FFFFFF;
+      line-height: 25px;
+      padding: 2.5rem 0rem;
+   }
+
+   &__sub3{
+      font-family : Sarabun-Regular;
+      font-size : 2rem;
+      text-align: center;
+      color : #FFFFFF;
+      padding: 0 18rem;
+      background: #e94258
+   }
+
+   &__banner{
+      width: 60%;
+      background-image: url("/assets/images/backresult.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family : Sarabun-Bold;
+      font-size : 2rem;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 15px;
+      line-height: 25px;
+      cursor: pointer;
+
+      &__cont{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+   }
+
+   &__redes{
+      font-family : Sarabun-Regular;
+      font-size : 2rem;
+      text-align: center;
+      color : #414042;
+      text-align: center;
+      margin: 3rem;
+   }
+
+   &__redescont{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3rem;
+
+      &__image{
+         width: 4rem;
+         margin: 0 .5rem;
+      }  
+   }
+
+   &__x{
+      position: absolute;
+      top:0;
+      right: 0;
+
+      &__image{
+         width: 3rem;
+      }
+   }
+}

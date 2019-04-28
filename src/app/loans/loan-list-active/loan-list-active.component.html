@@ -1,0 +1,218 @@
+
+<div class="publications" >
+  <div class="publications__main ui column row grid no-margin no-padding" *ngIf="state == 0">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column">
+        <div class="publications__main__text2">
+            Primeras<br>
+            publicaciones<br>
+            <span>en producción.</span>
+        </div>
+        <div class="publications__main__sub2">
+            Tan pronto como tengamos su contenido le<br>
+            notificaremos vía mail, igualmente queremos<br>
+            avisarle que estamos cerca de ese día:<br>
+        </div>
+        <div class="publications__main__counter">
+          05:24:09
+        </div>
+        <div class="publications__main__container ui column row grid no-margin no-padding">
+          
+          <div class="six wide column no-padding">
+            <div class="publications__main__container__card">
+              <div class="publications__main__container__card__image">
+                <img class="publications__main__container__card__image__pic" src="/assets/images/pencil.png">
+              </div>
+              <div class="publications__main__container__card__content">
+                <div class="publications__main__container__card__content__title">
+                  En Producción
+                </div>
+                <img class="publications__main__container__card__content__divider" src="/assets/images/dividercard.png">
+                <div class="publications__main__container__card__content__title">
+                  Entrega<br>
+                  <span>
+                    Viernes,<br>
+                    20 de Febrero.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="publications__main__container__card">
+              <div class="publications__main__container__card__image">
+                <img class="publications__main__container__card__image__pic" src="/assets/images/pencil.png">
+              </div>
+              <div class="publications__main__container__card__content">
+                <div class="publications__main__container__card__content__title">
+                  En Producción
+                </div>
+                <img class="publications__main__container__card__content__divider" src="/assets/images/dividercard.png">
+                <div class="publications__main__container__card__content__title">
+                  Entrega<br>
+                  <span>
+                    Viernes,<br>
+                    20 de Febrero.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="one wide column"></div>
+          <div class="six wide column no-padding">
+            <div class="publications__main__container__card">
+              <div class="publications__main__container__card__image">
+                <img class="publications__main__container__card__image__pic" src="/assets/images/pencil.png">
+              </div>
+              <div class="publications__main__container__card__content">
+                <div class="publications__main__container__card__content__title">
+                  En Producción
+                </div>
+                <img class="publications__main__container__card__content__divider" src="/assets/images/dividercard.png">
+                <div class="publications__main__container__card__content__title">
+                  Entrega<br>
+                  <span>
+                    Viernes,<br>
+                    20 de Febrero.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="publications__main__container__card">
+              <div class="publications__main__container__card__image">
+                <img class="publications__main__container__card__image__pic" src="/assets/images/pencil.png">
+              </div>
+              <div class="publications__main__container__card__content">
+                <div class="publications__main__container__card__content__title">
+                  En Producción
+                </div>
+                <img class="publications__main__container__card__content__divider" src="/assets/images/dividercard.png">
+                <div class="publications__main__container__card__content__title">
+                  Entrega<br>
+                  <span>
+                    Viernes,<br>
+                    20 de Febrero.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="three wide column"></div>
+        </div>
+      </div>
+      <div class="one wide column"></div>
+  </div> 
+  <div class="publications__main ui column row grid no-margin no-padding" *ngIf="state == 1">
+    <div class="one wide column"></div>
+    <div class="fourteen wide column">
+      <div class="publications__main__text2">
+          Estamos a la espera<br>
+          <span>de su aprobación.</span>
+      </div>
+      <div class="publications__main__sub2">
+          Dejando este contenido aprobado será<br>
+          agendado para quedar al aire en sus cuentas de<br>
+          redes sociales.<br>
+      </div>
+
+      <div class="publications__main__container ui column row grid no-margin no-padding">
+        <div class="six wide column no-padding">
+            <div class="publications__main__container__card__card2">
+              <div class="publications__main__container__card__image">
+                <img class="publications__main__container__card__image__pic2" src="/assets/images/testimage.png">
+              </div>
+              <div class="publications__main__container__card__content">
+                <div class="publications__main__container__card__content__title" (click)="largePub(0)">
+                  <i class="zoom icon"></i>
+                  Ampliar <br>
+                  &nbsp;&nbsp;
+                  &nbsp;&nbsp;
+                  Publicación
+                </div>
+                <img class="publications__main__container__card__content__divider" src="/assets/images/dividercard.png">
+                <div class="publications__main__container__card__content__title">
+                  <span>
+                    Plazo de aprobación:<br>
+                    3 de Febrero de 2019.
+                  </span>
+                </div>
+              </div>
+              <div class="publications__large" id="pub0">
+                <img class="publications__large__image" src="/assets/images/testimage.png">
+              </div>
+              <div class="publications__large__close" id="close0" (click)="closePub(0)">
+                <img class="publications__large__close__image" src="/assets/images/closeicon.png">
+              </div>
+            </div>
+          <div class="publications__main__container__card">
+            <div class="publications__main__container__card__image">
+              <img class="publications__main__container__card__image__pic" src="/assets/images/pencil.png">
+            </div>
+            <div class="publications__main__container__card__content">
+              <div class="publications__main__container__card__content__title">
+                En Producción
+              </div>
+              <img class="publications__main__container__card__content__divider" src="/assets/images/dividercard.png">
+              <div class="publications__main__container__card__content__title">
+                Entrega<br>
+                <span>
+                  Viernes,<br>
+                  20 de Febrero.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="one wide column"></div>
+        <div class="six wide column no-padding">
+          <div class="publications__main__container__card__card2">
+            <div class="publications__main__container__card__image">
+              <img class="publications__main__container__card__image__pic2" src="/assets/images/testimage.png">
+            </div>
+            <div class="publications__main__container__card__content">
+              <div class="publications__main__container__card__content__title" (click)="largePub(1)">
+                <i class="zoom icon"></i>
+                Ampliar <br>
+                &nbsp;&nbsp;
+                &nbsp;&nbsp;
+                Publicación
+              </div>
+              <img class="publications__main__container__card__content__divider" src="/assets/images/dividercard.png">
+              <div class="publications__main__container__card__content__title">
+                <span>
+                  Plazo de aprobación:<br>
+                  3 de Febrero de 2019.
+                </span>
+              </div>
+            </div>
+            <div class="publications__large" id="pub1">
+              <img class="publications__large__image" src="/assets/images/testimage.png">
+            </div>
+            <div class="publications__large__close" id="close1" (click)="closePub(1)">
+              <img class="publications__large__close__image" src="/assets/images/closeicon.png">
+            </div>
+          </div>
+          <div class="publications__main__container__card">
+            <div class="publications__main__container__card__image">
+              <img class="publications__main__container__card__image__pic" src="/assets/images/pencil.png">
+            </div>
+            <div class="publications__main__container__card__content">
+              <div class="publications__main__container__card__content__title">
+                En Producción
+              </div>
+              <img class="publications__main__container__card__content__divider" src="/assets/images/dividercard.png">
+              <div class="publications__main__container__card__content__title">
+                Entrega<br>
+                <span>
+                  Viernes,<br>
+                  20 de Febrero.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="three wide column"></div>
+      </div>
+    </div>
+    <div class="one wide column"></div>
+  </div> 
+</div>
+  

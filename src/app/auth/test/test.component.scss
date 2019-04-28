@@ -1,0 +1,22 @@
+.test {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  &__landing {
+    &__text {
+      font-family: Sarabun-ExtraBold;
+      font-size: 4.5rem;
+      color: #e51a7a;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .test {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}

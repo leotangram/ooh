@@ -1,0 +1,277 @@
+@import '../sass/common';
+
+.main-content{
+  &__no-logged{
+
+    &__banner{
+      height: 12vh;
+      display: flex;
+      align-items: center;
+
+      &__logo{
+        width: 10rem;
+        margin-left: 10rem !important;
+      }
+
+      &__menu-option{
+        font-family: Sarabun-Bold;
+        font-size: 1.8rem;
+        color: #6c6c6c !important;
+        letter-spacing: 0.12px;
+        text-align: center;
+        margin-right: 5rem !important;
+      }
+
+      &__left{
+        display: flex;
+        align-items: center;
+        width: 50%;
+      }
+
+      &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        padding-right: 10rem;
+
+        &__item{
+          margin: 0 1rem;
+        }
+
+        &__itemMenu{
+          margin: 0 1.5rem;
+        }
+      }
+    }
+
+    &__page{
+      height: 88vh;
+      overflow-y: scroll;
+
+    }
+  }
+}
+
+.template{
+  height: 100vh;
+  position: relative;
+
+  &__marker{
+    position: absolute;
+    right: 0rem;
+    top: 12rem;
+    background: #f1f2f2;
+    height: 6rem;
+    width: 12rem;
+    border-radius: 50px 0px 0 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__logo{
+      width: 4rem;
+      margin-bottom: .5rem;
+    }
+  }
+
+  &__container{
+    height: 100vh;
+
+    &__bar{
+      height: 100%;
+      background-image: url("/assets/images/bardash.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+
+      &__logo{
+        text-align: center;
+        margin-top: 3rem;
+        &__pic{
+          width: 10rem;
+        }
+      }
+
+      &__menu{
+        position: absolute;
+        top: 15rem;
+        left: 8rem;
+
+        &__selected{
+          padding: 1.51rem;
+          width: 26rem;
+          background: #e7457a;
+          border-radius: 0px 50px 50px 0;
+        }
+
+        &__option{
+          cursor: pointer;
+          font-family : Sarabun-Regular;
+          font-size : 3rem;
+          line-height: 30px;
+          color: #ffffff;
+          margin: 2rem 0;
+          padding: 1.51rem;
+
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+
+    &__settings{
+      height: 10%;
+      padding: 2rem 10rem;
+
+      &__options{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &__option{
+          margin: 0 2rem;
+        }
+
+        &__option2{
+          margin: 0 0rem 0 2rem;
+        }
+
+        &__option3{
+          margin: 0 2rem 0 1rem;
+          font-family: Sarabun-Bold;
+          font-size: 1.8rem;
+          color: #6c6c6c !important;
+          letter-spacing: 0.12px;
+          text-align: center;
+        }
+
+        &__pic{
+          width: 4rem;
+        }
+        &__pic2{
+          width: 2rem;
+        }
+      }
+    }
+
+    &__content{
+      height: 90%;
+    }
+  }
+
+  &__right{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    &__content{
+      margin-top: 20vh;
+      background: #e6e7e8;
+      height: 80%;
+      border-radius: 40px 30px 0px 0px;
+      padding: 6rem 2rem 1rem 4rem;
+
+      &__text{
+        font-family: Sarabun-Regular;
+        font-size: 1.5rem;
+        color: #E51A7A!important;
+        letter-spacing: 0.12px;
+        text-align: left;
+      }
+
+      &__icons{
+        margin-top: .5rem;
+
+        &__pic{
+          margin-right: 1rem;
+          width: 3rem;
+        }
+      }
+
+      &__divide{
+        width: 85%;
+      }
+
+      &__resume{
+        margin-top: 2rem;
+        width: 12rem;
+      }
+    }
+  }
+}
+
+.ui.menu .ui.dropdown .menu>.item {
+  font-family: Sarabun-Regular !important;
+  font-size: 1.5rem !important;
+  color: #A1A0A0 !important;
+  letter-spacing: 0 !important;
+}
+
+.mobileAPP{
+  &__landing{
+    position: relative;
+
+      &__header{
+          height: 6rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: fixed;
+          z-index: 1;
+          width: 100%;
+          background: white;
+          border-bottom: 3px solid #FC5424;
+  
+          &__image{
+            height: 6rem;
+            padding: 1rem;
+          }
+
+          &__menu{
+            font-family: Sarabun-SemiBold;
+            font-size: 1.6rem;
+            color: #424042;
+            letter-spacing: 0;
+
+            
+            &__content{
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                margin-top: 6rem;
+                background : #231F20;
+        
+                &__option{
+                    font-family: Sarabun-Regular !important;
+                    font-size: 2rem !important;
+                    color: #FFFFFF !important;
+                    letter-spacing: 0.12px !important;
+                    padding: 2rem;
+                }
+
+                &__option2{
+                  font-family: Sarabun-Regular !important;
+                  font-size: 2rem !important;
+                  color: #EA5133 !important;
+                  letter-spacing: 0.12px !important;
+                  padding: 2rem;
+                  border-top: 1px solid #ffffff;
+              }
+
+              &__option3{
+                font-family: Sarabun-Regular !important;
+                font-size: 2rem !important;
+                color: #E51A7A !important;
+                letter-spacing: 0.12px !important;
+                padding: 2rem;
+                border-top: 1px solid #ffffff;
+              }
+            }
+          }
+      }
+  }
+}

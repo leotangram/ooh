@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17,34.4457524 L24,38.8207524 L31,34.4457524 L31,33 L17,33 L17,34.4457524 Z M16,31 L32,31 C32.5522847,31 33,31.4477153 33,32 L33,35 C33,35.34479 32.8223803,35.66526 32.5299989,35.8479983 L24.5299989,40.8479983 C24.2057287,41.0506672 23.7942713,41.0506672 23.4700011,40.8479983 L15.4700011,35.8479983 C15.1776197,35.66526 15,35.34479 15,35 L15,32 C15,31.4477153 15.4477153,31 16,31 Z M17,43 L31,43 L31,39 C31,38.4477153 31.4477153,38 32,38 C32.5522847,38 33,38.4477153 33,39 L33,44 C33,44.5522847 32.5522847,45 32,45 L16,45 C15.4477153,45 15,44.5522847 15,44 L15,39 C15,38.4477153 15.4477153,38 16,38 C16.5522847,38 17,38.4477153 17,39 L17,43 Z" id="path-1"></path>
+    </defs>
+    <g id="Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ajustes--Cambiar-email" transform="translate(-381.000000, -314.000000)">
+            <g id="Menu" transform="translate(366.000000, 283.000000)">
+                <g id="Icon-2">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#1DC1C1" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

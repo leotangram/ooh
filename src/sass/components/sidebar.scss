@@ -1,0 +1,83 @@
+.sidebarContent{
+   width: 28% !important;
+   padding: 0rem 7rem;
+   display: flex !important;
+   justify-content: flex-end;
+   background-repeat: no-repeat !important;
+   background-position: right !important;
+   background-position-y: 5rem !important; 
+   position: fixed !important;
+   top: 0 !important;
+
+   &-back{
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      font-family: Sarabun-Regular;
+      font-size: 1.5rem;
+      color: #040404;
+      letter-spacing: 0;
+      display: flex;
+      cursor: pointer;
+   }
+    
+   &__title{
+      font-family: Sarabun-Regular;
+      font-size: 3rem;
+      color: $primary-blue;
+      letter-spacing: 0;
+
+      &__congrat{
+         font-family: Sarabun-BoldItalic;
+         font-size: 4.8rem;
+         color: #1DC1C1;
+         letter-spacing: -2.31px;
+         text-align: center;
+         line-height: 45px;
+         text-align: center;
+      }
+   }
+
+   &__text{
+      font-family: Sarabun-Regular;
+      font-size: 1.8rem;
+      color: $primary-grey;
+      letter-spacing: 0;
+      line-height: 20px;
+      margin-top: 4rem;
+
+      &__small{ 
+         font-size: 1.5rem;
+         font-family: Sarabun-Regular;
+         color: $primary-grey;
+         letter-spacing: 0;
+         line-height: 20px;
+         margin: 4rem 0;
+         
+         &:last-child{
+            margin-bottom: 2.5rem;
+         }  
+      }
+
+      &__small2{ 
+         font-size: 1.5rem;
+         font-family: Sarabun-Regular;
+         color: $primary-grey;
+         letter-spacing: 0;
+         line-height: 20px;
+         margin: 15rem 0;
+         
+         &:last-child{
+            margin-bottom: 2.5rem;
+         }  
+      }
+
+      &__invisible{
+         height: 15rem;
+      }
+
+      &__invisible2{
+         height: 25rem;
+      }
+   }
+}

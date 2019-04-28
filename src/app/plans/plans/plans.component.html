@@ -1,0 +1,116 @@
+<div class="plans" >
+  <div class="plans__container ui column row grid no-margin no-padding">
+    <div class="two wide column"></div>
+    <div class="twelve wide column plans__container__center">
+      <div class="plans__container__center__card">
+        <div class="plans__container__center__card__title">
+          Plan Ivity
+        </div>
+        <div class="plans__container__center__card__check">
+          <div class="profile__main__row3__two__toggle">
+            <label class="switch">
+              <input type="checkbox" [(ngModel)]="plan" (change)="planEvent($event)">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="plans__container__center__card__container" *ngIf="!plan">
+          <div class="plans__container__center__card__container__text">
+            <p>Pago mensual</p>
+            <span><p><b>Pago anual 2 meses gratis</b></p></span>
+          </div>
+          <div style="display: flex;-items: center;justify-content: center;">
+            <div class="plans__container__center__card__container__amount">
+              $999.900/año
+            </div>
+          </div>
+          <div class="ui hidden divider"></div>
+          <div class="ui hidden divider"></div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Contenido apropiado para su marca
+          </div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Publicaciones al aire de forma estrategica
+          </div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Diseño de piezas
+          </div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Una publicación semanal al aire*
+          </div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Un informe mensual
+          </div>
+        </div>
+        <div class="plans__container__center__card__container" *ngIf="plan">
+          <div class="plans__container__center__card__container__text">
+            <span><p><b>Pago mensual</b></p></span>
+            <p>Pago anual 2 meses gratis</p>
+          </div>
+          <div class="ui hidden divider"></div>
+          <div style="display: flex;-items: center;justify-content: center;">
+            <div class="plans__container__center__card__container__amount2">
+              $99.900/mes
+            </div>
+          </div>
+          <div class="ui hidden divider"></div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Contenido apropiado para su marca
+          </div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Publicaciones al aire de forma estrategica
+          </div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Diseño de piezas
+          </div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Una publicación semanal al aire*
+          </div>
+          <div class="plans__container__center__card__container__options">
+            <div class="plans__container__center__card__container__options__image">
+              <img class="plans__container__center__card__container__options__image__pic" src="/assets/images/radioon.png">
+            </div>
+            Un informe mensual
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="two wide column"></div>
+  </div>
+  <div class="plans__footer align-center">
+    <button class="button__landing__banner__account" style="margin: 3rem;">
+      Comprar ahora online
+    </button>
+    <div class="plans__footer__text">
+        *Las publicaciones al aire están sujetas al
+        tiempo de aprobación del cliente.
+    </div>
+  </div>
+</div>

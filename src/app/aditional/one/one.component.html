@@ -1,0 +1,462 @@
+<div *ngIf="isLarge" class="oneAd">
+  <div class="oneAd__specialize" *ngIf="step == 0">
+    <div class="oneAd__specialize__header">
+      <div class="oneAd__specialize__header__container ui column row grid no-margin">
+        <div class="four wide column"></div>
+        <div class="eight wide column">
+          <div class="oneAd__specialize__header__progress__container">
+            <img class="oneAd__specialize__header__progress" src="/assets/images/progress1.png">
+            <div class="oneAd__specialize__header__progress__content">
+              <div class="oneAd__specialize__header__progress__text__1">
+                Configuración<br>
+                de cuenta
+              </div>
+              <div class="oneAd__specialize__header__progress__text__2" style="margin-left: -2rem;">
+                Información <br>
+                adicional
+              </div>
+              <div class="oneAd__specialize__header__progress__text__2">
+                Información <br>
+                detallada
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="four wide column"></div>       
+      </div>
+    </div>
+    <div class="oneAd__specialize__content ui column row grid no-margin">
+      <div class="five wide column"></div>
+      <div class="six wide column no-padding oneAd__specialize__content__box">
+        <div class="oneAd__specialize__content__titlegrey">
+            Esta es 1 de las 3 preguntas para configurar su cuenta.
+            
+        </div>
+        <div class="oneAd__specialize__container__questionary__answer">
+          <div class="oneAd__specialize__container__questionary__answer__number">
+            <img class="oneAd__specialize__container__questionary__answer__number__pic" 
+            src="/assets/images/form1.png">
+          </div>
+          <div class="oneAd__specialize__container__questionary__answer__cont">
+            <div>
+              <label class="label-input2">Nombre de la marca</label>
+              <div class="ui input field inputField login__main__box__form__input">
+                <input type="text" name="marca" [(ngModel)]="marca" placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oneAd__specialize__container__button2">
+          <button class="button__landing__main__common" (click)="step_one()" [disabled]="marca == ''">
+            Siguiente
+          </button>
+        </div>
+      </div>
+      <div class="five wide column"></div>
+    </div>
+    <div class="oneAd__specialize__footer ui column row grid no-margin">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column">
+        <div class="oneAd__specialize__footer__content__content2 align-center">
+          Términos y condiciones    -   Política de privacidad<br>
+          ivity © 2019 All Rights Reserved
+        </div>
+      </div>
+      <div class="one wide column"></div>
+    </div>
+  </div>
+  <div class="oneAd__specialize" *ngIf="step == 1">
+    <div class="oneAd__specialize__header">
+      <div class="oneAd__specialize__header__container ui column row grid no-margin">
+        <div class="four wide column"></div>
+        <div class="eight wide column">
+          <div class="oneAd__specialize__header__progress__container">
+            <img class="oneAd__specialize__header__progress" src="/assets/images/progress2.png">
+            <div class="oneAd__specialize__header__progress__content">
+              <div class="oneAd__specialize__header__progress__text__1">
+                Configuración<br>
+                de cuenta
+              </div>
+              <div class="oneAd__specialize__header__progress__text__2" style="margin-left: -2rem;">
+                Información <br>
+                adicional
+              </div>
+              <div class="oneAd__specialize__header__progress__text__2">
+                Información <br>
+                detallada
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="four wide column"></div>       
+      </div>
+    </div>
+    <div class="oneAd__specialize__content ui column row grid no-margin">
+      <div class="five wide column"></div>
+      <div class="six wide column no-padding oneAd__specialize__content__box">
+        <div class="oneAd__specialize__container__questionary__answer">
+          <div class="oneAd__specialize__container__questionary__answer__number">
+            <img class="oneAd__specialize__container__questionary__answer__number__pic" 
+            src="/assets/images/form2.png">
+          </div>
+          <div class="oneAd__specialize__container__questionary__answer__cont">
+            <div class="oneAd__specialize__container__questionary__answer__cont__text">
+              ¿Su empresa tiene página web?
+            </div>
+            <div class="oneAd__specialize__container__questionary__answer__cont__options">
+              <div class="oneAd__specialize__container__check__option2">
+                <div class="oneAd__specialize__container__check__option2__radio">
+                  <img *ngIf="haspage != 0" (click)="haspageClick(0)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="haspage == 0" (click)="haspageClick(0)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  Si
+              </div>
+              <div class="oneAd__specialize__container__check__option2">
+                <div class="oneAd__specialize__container__check__option2__radio">
+                  <img *ngIf="haspage != 1" (click)="haspageClick(1)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="haspage == 1" (click)="haspageClick(1)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  No
+              </div>
+              <div class="oneAd__specialize__container__check__option2">
+                <div class="oneAd__specialize__container__check__option2__radio">
+                  <img *ngIf="haspage != 2" (click)="haspageClick(2)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="haspage == 2" (click)="haspageClick(2)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  No sé
+              </div>
+            </div>
+            <div *ngIf="haspage == 0">
+              <div class="ui hidden divider"></div>
+              <div class="ui hidden divider"></div>
+              <label class="label-input2">Página web de la empresa</label>
+              <div class="ui input field inputField login__main__box__form__input">
+                <input type="text" name="page" [(ngModel)]="page" placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oneAd__specialize__container__button2">
+          <button class="button__landing__main__common" (click)="step_one()" 
+          [disabled]="(page == '' && haspage == 0) || (haspage == -1)">
+            Siguiente
+          </button>
+        </div>
+      </div>
+      <div class="five wide column"></div>
+    </div>
+    <div class="oneAd__specialize__footer ui column row grid no-margin">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column">
+        <div class="oneAd__specialize__footer__content__content2 align-center">
+          Términos y condiciones    -   Política de privacidad<br>
+          ivity © 2019 All Rights Reserved
+        </div>
+      </div>
+      <div class="one wide column"></div>
+    </div>
+  </div>
+  <div class="oneAd__specialize" *ngIf="step == 2">
+    <div class="oneAd__specialize__header">
+      <div class="oneAd__specialize__header__container ui column row grid no-margin">
+        <div class="four wide column"></div>
+        <div class="eight wide column">
+          <div class="oneAd__specialize__header__progress__container">
+            <img class="oneAd__specialize__header__progress" src="/assets/images/progress3.png">
+            <div class="oneAd__specialize__header__progress__content">
+              <div class="oneAd__specialize__header__progress__text__1">
+                Configuración<br>
+                de cuenta
+              </div>
+              <div class="oneAd__specialize__header__progress__text__2" style="margin-left: -2rem;">
+                Información <br>
+                adicional
+              </div>
+              <div class="oneAd__specialize__header__progress__text__2">
+                Información <br>
+                detallada
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="four wide column"></div>       
+      </div>
+    </div>
+    <div class="oneAd__specialize__content ui column row grid no-margin">
+      <div class="four wide column"></div>
+      <div class="eight wide column no-padding oneAd__specialize__content__box">
+        <div class="oneAd__specialize__container__questionary__answer">
+          <div class="oneAd__specialize__container__questionary__answer__number">
+            <img class="oneAd__specialize__container__questionary__answer__number__pic" 
+            src="/assets/images/form3.png">
+          </div>
+          <div class="oneAd__specialize__container__questionary__answer__cont">
+            <div class="oneAd__specialize__container__questionary__answer__cont__text">
+              ¿Su empresa tiene redes sociales?
+            </div>
+            <div class="oneAd__specialize__container__questionary__answer__cont__options">
+              <div class="oneAd__specialize__container__check__option2">
+                <div class="oneAd__specialize__container__check__option2__radio">
+                  <img *ngIf="hasredes != 0" (click)="hasredesClick(0)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="hasredes == 0" (click)="hasredesClick(0)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  Si
+              </div>
+              <div class="oneAd__specialize__container__check__option2">
+                <div class="oneAd__specialize__container__check__option2__radio">
+                  <img *ngIf="hasredes != 1" (click)="hasredesClick(1)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="hasredes == 1" (click)="hasredesClick(1)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  No
+              </div>
+              <div class="oneAd__specialize__container__check__option2">
+                <div class="oneAd__specialize__container__check__option2__radio">
+                  <img *ngIf="hasredes != 2" (click)="hasredesClick(2)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                  <img *ngIf="hasredes == 2" (click)="hasredesClick(2)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                </div>
+                  No sé
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- User has redes -->
+        <div class="oneAd__specialize__container__questionary__answer" *ngIf="hasredes == 0">
+          <div class="oneAd__specialize__container__questionary__answer__cont">
+            <div class="oneAd__specialize__container__questionary__answer__cont__text2">
+              Por favor colocar al menos un link de sus redes sociales
+            </div>
+            <div class="ui column row grid no-margin">
+              <div class="eight wide column">
+                <div class="oneAd__specialize__container__questionary__answer__answer2">
+                  <div class="oneAd__specialize__container__questionary__answer__number">
+                    <img class="oneAd__specialize__container__questionary__answer__number__pic2" 
+                    src="/assets/images/instagram.png">
+                  </div>
+                  <div class="oneAd__specialize__container__questionary__answer__cont">
+                    <div>
+                      <div class="ui input field inputField login__main__box__form__input">
+                        <input type="text" name="marca" placeholder="" [(ngModel)]="instagram">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="oneAd__specialize__container__questionary__answer__answer2">
+                  <div class="oneAd__specialize__container__questionary__answer__number">
+                    <img class="oneAd__specialize__container__questionary__answer__number__pic2" 
+                    src="/assets/images/facebook.png">
+                  </div>
+                  <div class="oneAd__specialize__container__questionary__answer__cont">
+                    <div>
+                      <div class="ui input field inputField login__main__box__form__input">
+                        <input type="text" name="marca" placeholder="" [(ngModel)]="facebook">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="eight wide column">
+                <div class="oneAd__specialize__container__questionary__answer__answer2">
+                  <div class="oneAd__specialize__container__questionary__answer__number">
+                    <img class="oneAd__specialize__container__questionary__answer__number__pic2" 
+                    src="/assets/images/twitter.png">
+                  </div>
+                  <div class="oneAd__specialize__container__questionary__answer__cont">
+                    <div>
+                      <div class="ui input field inputField login__main__box__form__input">
+                        <input type="text" name="marca" placeholder="" [(ngModel)]="twitter">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="oneAd__specialize__container__questionary__answer__answer2">
+                  <div class="oneAd__specialize__container__questionary__answer__number">
+                    <img class="oneAd__specialize__container__questionary__answer__number__pic2" 
+                    src="/assets/images/linkedin.png">
+                  </div>
+                  <div class="oneAd__specialize__container__questionary__answer__cont">
+                    <div>
+                      <div class="ui input field inputField login__main__box__form__input">
+                        <input type="text" name="marca" placeholder="" [(ngModel)]="linkedin">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- User hasnt redes -->
+        <div class="oneAd__specialize__container__result" *ngIf="hasredes == 1 || hasredes == 2">
+          <div class="oneAd__specialize__container__result__question">
+              ¿Desea que uno de nuestros ejecutivos de cuenta lo contacte
+              vía WhatsApp para hacer la apertura de sus cuentas?
+          </div>
+          <div class="oneAd__specialize__container__questionary__answer__cont__options">
+            <div class="oneAd__specialize__container__check__option2">
+              <div class="oneAd__specialize__container__check__option2__radio">
+                <img *ngIf="contact != 0" (click)="contactClick(0)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                <img *ngIf="contact == 0" (click)="contactClick(0)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+              </div>
+                Si
+            </div>
+            <div class="oneAd__specialize__container__check__option2">
+              <div class="oneAd__specialize__container__check__option2__radio">
+                <img *ngIf="contact != 1" (click)="contactClick(1)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                <img *ngIf="contact == 1" (click)="contactClick(1)" class="oneAd__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+              </div>
+                No
+            </div>
+          </div>
+          <div class="ui hidden divider"></div>
+          <div class="ui hidden divider"></div>
+          <div class="ui hidden divider"></div>
+          <div *ngIf="contact == 0" 
+          style="display: flex;
+          align-items: center;
+          justify-content: center;">
+            <div style="width:50%;margin-bottom: 3rem;">
+              <label class="label-input2">Número de WhatsApp</label>
+              <div class="oneAd__specialize__container__result__question__container">
+                <div class="oneAd__specialize__container__result__question__container" style="width:20%">
+                  <div class="oneAd__specialize__container__result__question__number">(+</div>
+                  <div class="ui input field inputField">
+                    <input type="text" name="what" placeholder="" [(ngModel)]="what"
+                    style="padding-left: 0 !important ;padding-right: 0 !important;text-align: center;    
+                    border-bottom: none !important">
+                  </div>
+                  <div class="oneAd__specialize__container__result__question__number">)</div>
+                </div>
+                <div class="ui input field inputField" style="width:80%">
+                  <input type="text" name="marca" placeholder="" [(ngModel)]="number">
+                </div>
+              </div>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+          </div>
+        </div>
+        <!-- User doesnt want support -->
+        <div class="oneAd__specialize__container__result" *ngIf="(hasredes == 1 || hasredes == 2) && contact == 1">
+          <div class="oneAd__specialize__container__result__banner">
+              Este es el momento para hacer visible su
+              marca en LinkedIn, Instagram o Facebook.
+          </div>
+          <div class="oneAd__specialize__container__result__video">
+            <img class="oneAd__specialize__container__result__video__image" src="/assets/images/video.png">
+          </div>
+          <div class="oneAd__specialize__container__result__both">
+            <button class="button__landing__main__common" (click)="contactAc()">
+              Si quiero que me <br>contacten
+            </button>
+            <button class="button__landing__main__common" (click)="noInfo()">
+              En otro momento.<br> Cerrar
+            </button>
+          </div>
+        </div>
+        
+        <!-- Next --> 
+        <div class="oneAd__specialize__container__button2" *ngIf="((hasredes != 1 || hasredes != 2) && contact != 1) || hasredes == 0">
+          <button class="button__landing__main__common" (click)="step_two()" 
+          [disabled]="(hasredes == -1)
+          ||  (contact == -1 && (hasredes == 1 || hasredes == 2 )) || (contact == 0 && number == '')">
+            Siguiente 
+          </button>
+        </div>
+      </div>
+      <div class="four wide column"></div>
+    </div>
+    <div class="oneAd__specialize__footer ui column row grid no-margin">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column">
+        <div class="oneAd__specialize__footer__content__content2 align-center">
+          Términos y condiciones    -   Política de privacidad<br>
+          ivity © 2019 All Rights Reserved
+        </div>
+      </div>
+      <div class="one wide column"></div>
+    </div>
+  </div>
+</div>
+
+<ng-template let-context let-modal="modal" #modalInfo>
+  <div class="content modalContent no-padding">
+    <div class="modalContent__dot">
+      <img class="modalContent__dot__pic" src="/assets/images/dot.png">
+    </div>
+    <div class="modalContent__text">
+        <span>Gracias, </span>está un paso más<br>
+        cerca de tener contenido<br>
+        en sus redes sociales.<br>
+    </div>
+    <div class="modalContent__horizontal">
+      <img class="modalContent__horizontal__pic" src="/assets/images/horizontal.png">
+    </div>
+
+    <div class="modalContent__textmini">
+        Cualquier duda nos estaremos<br>
+        comunicando vía mail; ahora puede<br>
+        continuar ingresando información de su<br>
+        empresa y la tendremos en cuenta para<br>
+        futuras publicaciones.
+    </div>
+
+
+    <div class="modalContent__banner__cont">
+      <button class="button__landing__main__promo" (click)="modal.approve('approved')">
+        Continuar ahora
+      </button>
+    </div>
+    <div class="modalContent__banner__cont">
+      <button class="button__landing__main__promo" (click)="modal.approve('approved')">
+        En otro momento
+      </button>
+    </div>
+    <div class="modalContent__redes">
+        Visítenos en nuestras redes sociales
+    </div>
+    <div class="modalContent__redescont">
+      <img class="modalContent__redescont__image" src="/assets/images/insba.png">
+      <img class="modalContent__redescont__image" src="/assets/images/facba.png">
+      <img class="modalContent__redescont__image" src="/assets/images/linba.png">
+    </div>
+    
+  </div>
+</ng-template>
+
+<ng-template let-context let-modal="modal" #modalInfo2>
+    <div class="content modalContent no-padding">
+      <div class="modalContent__dot">
+        <img class="modalContent__dot__pic" src="/assets/images/dot.png">
+      </div>
+      <div class="modalContent__text2">
+          Para poder iniciar su prueba<br> 
+          gratis de 30 días es requisito:
+      </div>
+      <div class="modalContent__sub4">
+          Tener página web, redes sociales<br> 
+          abiertas o empezar el poceso<br>
+          de apertura de sus cuentas en<br>
+          Facebook, Instagram o LinkedIn. 
+      </div>
+      <div class="modalContent__sub5">
+          Si cambia de opinión<br>
+          siempre podrá volver.
+      </div>
+      <div class="modalContent__redes">
+          Visítenos en nuestras redes sociales
+      </div>
+      <div class="modalContent__redescont">
+        <img class="modalContent__redescont__image" src="/assets/images/instagram.png">
+        <img class="modalContent__redescont__image" src="/assets/images/facebook.png">
+        <img class="modalContent__redescont__image" src="/assets/images/twitter.png">
+      </div>
+      
+    </div>
+  </ng-template>
+
+<ngx-loading [show]="loading" 
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffffff', 
+              secondaryColour: '#ffffff', 
+              tertiaryColour: '#ffffff' }" 
+  [template]="customLoadingTemplate"></ngx-loading>

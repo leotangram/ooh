@@ -1,0 +1,339 @@
+<!-- Screen >= to 1150 -->
+<div *ngIf="isLarge" class="landing">
+  <div class="landing__main ui column row grid no-margin">
+    <div class="one wide column"></div>
+    <div class="seven wide column landing__main__first">
+      <div class="landing__main__first__text">
+        Contenido para<br />
+        sus redes sociales<br />
+        <span>a un precio justo.</span>
+      </div>
+      <div class="landing__main__first__sub">
+        Somos la herramienta que le solucionará<br />
+        verse bien en redes, sin gastar más.
+      </div>
+      <div class="landing__main__first__promo">
+        <button class="button__landing__main__promo">
+          Por $199.900 al mes
+        </button>
+      </div>
+      <div class="landing__main__first__promo2">
+        <button
+          class="button__landing__main__test-big"
+          (click)="goToRegister()"
+        >
+          Pruebe gratis ahora
+        </button>
+      </div>
+    </div>
+    <div class="seven wide column no-padding landing__main__second">
+      <div class="landing__main__second__image">
+        <img
+          class="landing__main__second__image__pic"
+          src="/assets/images/video.png"
+        />
+      </div>
+    </div>
+    <div class="one wide column"></div>
+  </div>
+  <div class="landing__specialize ui column row grid no-margin">
+    <div
+      class="ui column row grid no-margin landing__specialize__header no-padding"
+    >
+      <div class="three wide column no-padding"></div>
+      <div class="ten wide column no-padding">
+        <div class="landing__specialize__header__container">
+          <div class="landing__specialize__header__container__image">
+            <img
+              class="landing__specialize__header__container__image__pic"
+              src="/assets/images/logowhite.png"
+            />
+          </div>
+          <div class="landing__specialize__header__container__text">
+            se especializa en
+          </div>
+        </div>
+      </div>
+      <div class="three wide column no-padding"></div>
+    </div>
+    <div class="ui column row grid no-margin">
+      <div class="three wide column"></div>
+      <div class="ten wide column no-padding">
+        <div class="landing__specialize__content">
+          <div class="landing__specialize__content__card">
+            <div class="landing__specialize__content__card__image">
+              <img
+                class="landing__specialize__content__card__image__pic"
+                src="/assets/images/spe1.png"
+              />
+            </div>
+            <div class="landing__specialize__content__card__text">
+              <span>Tener</span> la información de su empresa actualizada en
+              internet.
+            </div>
+          </div>
+
+          <div class="landing__specialize__content__card">
+            <div class="landing__specialize__content__card__image">
+              <img
+                class="landing__specialize__content__card__image__pic"
+                src="/assets/images/spe2.png"
+              />
+            </div>
+            <div class="landing__specialize__content__card__text">
+              <span>Publicar</span> en sus redes sociales de forma estratégica.
+            </div>
+          </div>
+
+          <div class="landing__specialize__content__card">
+            <div class="landing__specialize__content__card__image">
+              <img
+                class="landing__specialize__content__card__image__pic"
+                src="/assets/images/spe3.png"
+              />
+            </div>
+            <div class="landing__specialize__content__card__text">
+              <span>Intensificar</span> la visibilidad de su marca, empresa o
+              productos.
+            </div>
+          </div>
+        </div>
+        <div class="landing__specialize__footer">
+          <button
+            class="button__landing__main__common"
+            (click)="goToRegister()"
+          >
+            Cree su cuenta hoy
+          </button>
+        </div>
+      </div>
+      <div class="three wide column"></div>
+    </div>
+  </div>
+  <div class="landing__specialize2 ui column row grid no-margin">
+    <div class="ui column row grid no-margin landing__specialize2__header">
+      <div class="three wide column"></div>
+      <div class="ten wide column no-padding">
+        <div class="landing__specialize2__header__container">
+          <div class="landing__specialize2__header__container__text">
+            Facebook, Instagram o LinkedIn<br />
+            actualizadas en solo 3 pasos:
+          </div>
+        </div>
+      </div>
+      <div class="three wide column"></div>
+    </div>
+    <div class="ui column row grid no-margin">
+      <div class="three wide column"></div>
+      <div class="ten wide column no-padding">
+        <div class="landing__specialize2__content">
+          <div class="landing__specialize2__content__card">
+            <div class="landing__specialize2__content__card__column">
+              <div class="landing__specialize2__content__card__text1">
+                Cree su <br />cuenta
+              </div>
+            </div>
+            <div class="landing__specialize2__content__card__column">
+              <div class="landing__specialize2__content__card__text1">
+                Apruebe su<br />
+                contenido
+              </div>
+            </div>
+            <div class="landing__specialize2__content__card__column">
+              <div class="landing__specialize2__content__card__text2">
+                Logre visibilidad<br />
+                en el universo<br />
+                digital
+              </div>
+            </div>
+          </div>
+          <div class="landing__specialize2__content__card">
+            <img
+              class="landing__specialize2__content__card__image"
+              src="/assets/images/steps.png"
+            />
+          </div>
+          <div class="landing__specialize2__content__card__card2">
+            <div class="landing__specialize2__content__card__column2">
+              <div class="landing__specialize2__content__card__text3">
+                <span>Generamos</span> textos<br />
+                y <span>diseñamos</span> las<br />
+                piezas gráficas
+              </div>
+            </div>
+            <div class="landing__specialize2__content__card__column2">
+              <div class="landing__specialize2__content__card__text3">
+                <span>Publicamos</span><br />
+                estratégicamente<br />
+                en sus redes sociales
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="landing__specialize__footer">
+          <button class="button__landing__main__promo" (click)="goToRegister()">
+            Cree su cuenta hoy
+          </button>
+        </div>
+      </div>
+      <div class="three wide column"></div>
+    </div>
+  </div>
+  <div class="landing__quality ui column row grid no-margin">
+    <div class="two wide column"></div>
+    <div class="twelve wide column">
+      <div class="landing__quality__image">
+        <img
+          class="landing__quality__image__pic"
+          src="/assets/images/imagequality.png"
+        />
+        <div class="landing__quality__text">
+          Conozca la calidad<br />
+          de nuestros servicios
+        </div>
+      </div>
+      <div class="landing__quality__button">
+        <div class="landing__quality__button__text">
+          Pruebe gratis por 30 días
+        </div>
+        <button class="button__landing__main__promo" (click)="goToRegister()">
+          Empiece hoy
+        </button>
+      </div>
+    </div>
+    <div class="two wide column"></div>
+  </div>
+  <div class="landing__company ui column row grid no-margin">
+    <div class="ui column row grid no-margin">
+      <div class="one wide column"></div>
+      <div class="six wide column no-padding landing__company__content">
+        <div class="landing__company__content__text">
+          <span>El servicio</span> que<br />
+          su empresa<br />
+          se merece
+        </div>
+      </div>
+      <div class="eight wide column no-padding">
+        <div class="landing__company__content">
+          <div class="landing__company__content__container">
+            <div class="landing__company__content__container__card">
+              <img
+                class="landing__company__content__container__card__image"
+                src="/assets/images/companyconnect.png"
+              />
+            </div>
+            <div class="landing__company__content__container__card">
+              <div class="landing__company__content__container__card__column">
+                <div class="landing__company__content__container__card__image2">
+                  <img
+                    class="landing__company__content__container__card__image2__pic"
+                    src="/assets/images/com1.png"
+                  />
+                </div>
+              </div>
+              <div class="landing__company__content__container__card__column">
+                <div class="landing__company__content__container__card__image2">
+                  <img
+                    class="landing__company__content__container__card__image2__pic"
+                    src="/assets/images/com2.png"
+                  />
+                </div>
+              </div>
+              <div class="landing__company__content__container__card__column">
+                <div class="landing__company__content__container__card__image2">
+                  <img
+                    class="landing__company__content__container__card__image2__pic"
+                    src="/assets/images/com3.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="landing__company__content__container__card">
+              <div class="landing__company__content__container__card__column">
+                <div class="landing__company__content__container__card__text1">
+                  Cuidadosa ortografía y redacción
+                </div>
+              </div>
+              <div class="landing__company__content__container__card__column">
+                <div class="landing__company__content__container__card__text1">
+                  Piezas gráficas que comunican
+                </div>
+              </div>
+              <div class="landing__company__content__container__card__column">
+                <div class="landing__company__content__container__card__text1">
+                  Publicación en la red social indicada
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="one wide column"></div>
+    </div>
+  </div>
+  <div class="landing__banner ui column row grid no-margin">
+    <div class="ui column row grid no-margin">
+      <div class="one wide column"></div>
+      <div class="seven wide column no-padding">
+        <div class="landing__banner__content">
+          <div class="landing__banner__content__image">
+            <img
+              class="landing__banner__content__image__pic"
+              src="/assets/images/ban1.png"
+            />
+          </div>
+          <div class="landing__banner__content__image">
+            <img
+              class="landing__banner__content__image__pic2"
+              src="/assets/images/ban3.png"
+            />
+          </div>
+          <div class="landing__banner__content__image">
+            <img
+              class="landing__banner__content__image__pic"
+              src="/assets/images/ban2.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="seven wide column no-padding">
+        <div class="landing__banner__content">
+          <div>
+            <div class="landing__banner__content__text">
+              Deje en manos de ivity sus redes sociales y empiece a ahorrar
+              tiempo y dinero.
+              <br /><br />
+              Pruebe gratis por 30 dias
+            </div>
+            <div class="landing__banner__content__button">
+              <button
+                class="button__landing__main__try"
+                (click)="goToRegister()"
+              >
+                Empiece hoy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="one wide column"></div>
+    </div>
+  </div>
+  <div class="landing__footer ui column row grid no-margin">
+    <div class="one wide column"></div>
+    <div class="fourteen wide column ui grid">
+      <div class="landing__footer__content__content2 align-center">
+        Términos y condiciones - Política de privacidad<br />
+        ivity © 2019 All Rights Reserved
+      </div>
+    </div>
+    <div class="one wide column"></div>
+  </div>
+</div>
+<!-- / Screen >= top 1150 -->
+
+<!-- Screen < to 1150 -->
+<div *ngIf="!isLarge" class="mobile">
+  <h1 class="mobile__landing__text">Esto es vista Mobile</h1>
+</div>
+<!-- / Screen < to 1150 -->

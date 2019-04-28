@@ -1,0 +1,346 @@
+<div *ngIf="isLarge" class="aditional">
+  <div class="aditional__specialize ui column row grid no-margin">
+    <div class="aditional__specialize__header">
+      <div class="aditional__specialize__header__container">
+        <div class="aditional__specialize__header__container__image">
+            Queremos conocer más<br>
+            sobre su compañía.
+        </div> 
+        <div class="aditional__specialize__header__container__text2">
+            El contenido que<br>
+            desarrollamos está<br>
+            hecho a su medida
+        </div>        
+      </div>
+    </div>
+    <div class="ui column row grid no-margin">
+      <div class="four wide column"></div>
+      <div class="eight wide column no-padding">
+        <div class="aditional__specialize__content">
+          <div class="aditional__specialize__content__wizard">
+            <div class="aditional__specialize__content__wizard__card">
+              <div class="aditional__specialize__content__wizard__card__number">
+                <img class="aditional__specialize__content__wizard__card__number__pic" src="/assets/images/wiz1.png">
+              </div>
+            </div>
+            <div>
+              <img class="aditional__specialize__content__wizard__bar2" src="/assets/images/fill1.png">
+            </div>
+            <div class="aditional__specialize__content__wizard__card">
+              <div class="aditional__specialize__content__wizard__card__number">
+                <img class="aditional__specialize__content__wizard__card__number__pic" src="/assets/images/wiz2.png">
+              </div>
+            </div>
+            <div>
+              <img class="aditional__specialize__content__wizard__bar" src="/assets/images/wixbar.png">
+            </div>
+            <div class="aditional__specialize__content__wizard__card">
+              <div class="aditional__specialize__content__wizard__card__number">
+                <img class="aditional__specialize__content__wizard__card__number__pic" src="/assets/images/wiz3.png">
+              </div>
+            </div>
+          </div>
+          <div class="aditional__specialize__content__wizard__wizard2">
+            <div class="aditional__specialize__content__wizard__card">
+              <div class="aditional__specialize__content__wizard__card__text">
+                Configuración<br> 
+                de cuenta
+              </div>
+            </div>
+            <div class="aditional__specialize__content__wizard__card">
+              <div class="aditional__specialize__content__wizard__card__text">
+                Información<br> 
+                adicional
+              </div>
+            </div>
+            <div class="aditional__specialize__content__wizard__card">
+              <div class="aditional__specialize__content__wizard__card__text2">
+                  Información<br> 
+                  detallada
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="four wide column"></div>
+    </div>
+  </div>
+  <div class="aditional__specialize__specialize2" *ngIf="step == 0">
+    <div class="aditional__specialize__header__header2">
+      <div class="">
+        <div class="aditional__specialize__header__container__container2">
+          <div class="aditional__specialize__header__container__text">
+            Información adicional
+          </div>        
+        </div>
+      </div>
+    </div>
+    <div class="ui column row grid no-margin">
+      <div class="five wide column"></div>
+      <div class="six wide column no-padding">
+        <div class="aditional__specialize__container__questionary">
+          <div class="aditional__specialize__container__questionary__answer">
+            <div class="aditional__specialize__container__questionary__answer__number">
+              <img class="aditional__specialize__container__questionary__answer__number__pic" 
+              src="/assets/images/form1.png">
+            </div>
+            <div class="aditional__specialize__container__questionary__answer__cont">
+              <div>
+                <label class="label-input2">¿Qué productos o servicios vende?</label>
+                <div class="ui input field inputField login__main__box__form__input">
+                  <textarea placeholder="Describa brevemente (Máximo 300 caracteres)"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aditional__specialize__container__questionary__answer">
+            <div class="aditional__specialize__container__questionary__answer__number">
+              <img class="aditional__specialize__container__questionary__answer__number__pic" 
+              src="/assets/images/form2.png">
+            </div>
+            <div class="aditional__specialize__container__questionary__answer__cont">
+              <div class="aditional__specialize__container__questionary__answer__cont__text">
+                ¿Qué tipos de canales utiliza?
+              </div>
+              <div class="aditional__specialize__container__questionary__answer__cont__options">
+                <div class="aditional__specialize__container__check__option2">
+                  <div class="aditional__specialize__container__check__option2__radio">
+                    <img *ngIf="chanel != 0" (click)="chanelClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                    <img *ngIf="chanel == 0" (click)="chanelClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                  </div>
+                    Online / e-commerce
+                </div>
+                <div class="aditional__specialize__container__check__option2">
+                  <div class="aditional__specialize__container__check__option2__radio">
+                    <img *ngIf="chanel != 1" (click)="chanelClick(1)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                    <img *ngIf="chanel == 1" (click)="chanelClick(1)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                  </div>
+                    Punto de venta
+                </div>
+                <div class="aditional__specialize__container__check__option2">
+                  <div class="aditional__specialize__container__check__option2__radio">
+                    <img *ngIf="chanel != 2" (click)="chanelClick(2)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                    <img *ngIf="chanel == 2" (click)="chanelClick(2)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                  </div>
+                    Otro
+                </div>
+              </div>
+              <div *ngIf="chanel == 0">
+                <div class="ui hidden divider"></div>
+                <div class="ui hidden divider"></div>
+                <label class="label-input2">Link a la tienda online / e-commerce </label>
+                <div class="ui input field inputField login__main__box__form__input">
+                  <input type="text" name="marca" placeholder="">
+                </div>
+              </div>
+              <div *ngIf="chanel == 1">
+                <div class="ui hidden divider"></div>
+                <div class="ui hidden divider"></div>
+                <label class="label-input2">Nombre de la sede</label>
+                <div class="ui input field inputField login__main__box__form__input">
+                  <input type="text" name="marca" placeholder="">
+                </div>
+                <div class="ui hidden divider"></div>
+                <label class="label-input2">Dirección principal</label>
+                <div class="ui input field inputField login__main__box__form__input">
+                  <input type="text" name="marca" placeholder="">
+                </div>
+                <div class="ui hidden divider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="aditional__specialize__container__questionary__answer">
+            <div class="aditional__specialize__container__questionary__answer__number">
+              <img class="aditional__specialize__container__questionary__answer__number__pic" 
+              src="/assets/images/form3.png">
+            </div>
+            <div class="aditional__specialize__container__questionary__answer__cont">
+              <div class="aditional__specialize__container__questionary__answer__cont__text">
+                  ¿Con cuál de los siguientes tonos de comunicación cree
+                  que se expresaría mejor su marca?
+              </div>
+              <label class="label-input2 aditional__specialize__container__questionary__answer__cont__text__label">
+                * Debe elegir solo uno.
+              </label>
+              <div class="aditional__specialize__container__questionary__answer__cont__options2">
+
+                <div class="aditional__specialize__container__questionary__answer__cont__options2__column">
+                  <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card">
+                    <div class="aditional__specialize__container__check__option2__radio">
+                      <img *ngIf="tone != 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                      <img *ngIf="tone == 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                    </div>
+                    <img class="aditional__specialize__container__questionary__answer__cont__options2__column__card__image" src="/assets/images/chaneldemo.png">
+                    <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card__text">
+                      Infantil<br>
+                      <span>Activo, inocente, feliz</span>
+                    </div>
+                  </div>
+                  <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card">
+                    <div class="aditional__specialize__container__check__option2__radio">
+                      <img *ngIf="tone != 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                      <img *ngIf="tone == 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                    </div>
+                    <img class="aditional__specialize__container__questionary__answer__cont__options2__column__card__image" src="/assets/images/chaneldemo.png">
+                    <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card__text">
+                      Infantil<br>
+                      <span>Activo, inocente, feliz</span>
+                    </div>
+                  </div>
+                  <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card">
+                    <div class="aditional__specialize__container__check__option2__radio">
+                      <img *ngIf="tone != 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                      <img *ngIf="tone == 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                    </div>
+                    <img class="aditional__specialize__container__questionary__answer__cont__options2__column__card__image" src="/assets/images/chaneldemo.png">
+                    <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card__text">
+                      Infantil<br>
+                      <span>Activo, inocente, feliz</span>
+                    </div>
+                  </div>
+                  <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card">
+                    <div class="aditional__specialize__container__check__option2__radio">
+                      <img *ngIf="tone != 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                      <img *ngIf="tone == 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                    </div>
+                    <img class="aditional__specialize__container__questionary__answer__cont__options2__column__card__image" src="/assets/images/chaneldemo.png">
+                    <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card__text">
+                      Infantil<br>
+                      <span>Activo, inocente, feliz</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="aditional__specialize__container__questionary__answer__cont__options2__column">
+                  <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card">
+                    <div class="aditional__specialize__container__check__option2__radio">
+                      <img *ngIf="tone != 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                      <img *ngIf="tone == 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                    </div>
+                    <img class="aditional__specialize__container__questionary__answer__cont__options2__column__card__image" src="/assets/images/chaneldemo.png">
+                    <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card__text">
+                      Infantil<br>
+                      <span>Activo, inocente, feliz</span>
+                    </div>
+                  </div>
+                  <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card">
+                    <div class="aditional__specialize__container__check__option2__radio">
+                      <img *ngIf="tone != 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                      <img *ngIf="tone == 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                    </div>
+                    <img class="aditional__specialize__container__questionary__answer__cont__options2__column__card__image" src="/assets/images/chaneldemo.png">
+                    <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card__text">
+                      Infantil<br>
+                      <span>Activo, inocente, feliz</span>
+                    </div>
+                  </div>
+                  <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card">
+                    <div class="aditional__specialize__container__check__option2__radio">
+                      <img *ngIf="tone != 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                      <img *ngIf="tone == 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                    </div>
+                    <img class="aditional__specialize__container__questionary__answer__cont__options2__column__card__image" src="/assets/images/chaneldemo.png">
+                    <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card__text">
+                      Infantil<br>
+                      <span>Activo, inocente, feliz</span>
+                    </div>
+                  </div>
+                  <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card">
+                    <div class="aditional__specialize__container__check__option2__radio">
+                      <img *ngIf="tone != 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+                      <img *ngIf="tone == 0" (click)="toneClick(0)" class="aditional__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+                    </div>
+                    <img class="aditional__specialize__container__questionary__answer__cont__options2__column__card__image" src="/assets/images/chaneldemo.png">
+                    <div class="aditional__specialize__container__questionary__answer__cont__options2__column__card__text">
+                      Infantil<br>
+                      <span>Activo, inocente, feliz</span>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="aditional__specialize__container__button">
+            <button class="button__landing__register__next" (click)="step_two()">
+              Siguiente
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="five wide column"></div>
+    </div>
+  </div>
+</div>
+
+<ng-template let-context let-modal="modal" #modalInfo>
+  <div class="content modalContent no-padding">
+    <div class="modalContent__dot">
+      <img class="modalContent__dot__pic" src="/assets/images/dot.png">
+    </div>
+    <div class="modalContent__text">
+        Estamos organizando<br>
+        su información cualquier<br> 
+        duda nos comunicaremos.
+    </div>
+    <div class="modalContent__horizontal">
+      <img class="modalContent__horizontal__pic" src="/assets/images/horizontal.png">
+    </div>
+    <div class="modalContent__sub">
+        Si desea continuar con el formulario<br> 
+        de información adicional lo puede<br> 
+        hacer ahora para que conozcamos<br> 
+        mejor sobre su compañía.
+    </div>
+    <div class="modalContent__banner__cont">
+      <div class="modalContent__banner">
+        Continuar con formulario de
+        información adicional
+      </div>
+    </div>
+    <div class="modalContent__banner__cont">
+      <div class="modalContent__banner">
+          En otro momento
+      </div>
+    </div>
+    <div class="modalContent__redes">
+        Visítenos en nuestras redes sociales
+    </div>
+    <div class="modalContent__redescont">
+      <img class="modalContent__redescont__image" src="/assets/images/instagram.png">
+      <img class="modalContent__redescont__image" src="/assets/images/facebook.png">
+      <img class="modalContent__redescont__image" src="/assets/images/twitter.png">
+    </div>
+    
+  </div>
+</ng-template>
+
+<ng-template let-context let-modal="modal" #modalInfo2>
+  <div class="content modalContent no-padding">
+    <div class="modalContent__dot">
+      <img class="modalContent__dot__pic" src="/assets/images/dot.png">
+    </div>
+    <div class="modalContent__text2">
+        Para poder iniciar su prueba<br> 
+        gratis de 30 días es requisito:
+    </div>
+    <div class="modalContent__sub4">
+        Tener página web, redes sociales<br> 
+        abiertas o empezar el poceso<br>
+        de apertura de sus cuentas en<br>
+        Facebook, Instagram o LinkedIn. 
+    </div>
+    <div class="modalContent__sub5">
+        Si cambia de opinión<br>
+        siempre podrá volver.
+    </div>
+    <div class="modalContent__redes">
+        Visítenos en nuestras redes sociales
+    </div>
+    <div class="modalContent__redescont">
+      <img class="modalContent__redescont__image" src="/assets/images/instagram.png">
+      <img class="modalContent__redescont__image" src="/assets/images/facebook.png">
+      <img class="modalContent__redescont__image" src="/assets/images/twitter.png">
+    </div>
+    
+  </div>
+</ng-template>

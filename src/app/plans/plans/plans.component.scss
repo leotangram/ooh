@@ -1,0 +1,169 @@
+@import './src/sass/variables';
+
+.plans{
+  height: 100%;
+  background-image: url("/assets/images/videoback2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow-y: scroll; 
+
+  &__container{
+      height: 75%;
+
+      &__center{
+         display: flex !important;
+         align-items: center;
+         justify-content: center;
+
+         &__card{
+            height: 100%;;
+            width: 55rem;
+            border: 5px solid #EA5133;
+            border-radius: 20px;
+            background: #ffffff;
+
+            &__title{
+               font-family : Sarabun-SemiBold;
+               font-size : 6rem;
+               line-height : 40.14px;
+               color: #FC5424;
+               margin: 2rem 0;
+               text-align: center;
+            }
+
+            &__check{
+               text-align: center;
+               margin-top: 2rem;
+            }
+
+            &__container{
+               &__text{
+                  display: flex;
+                  justify-content: space-around;
+                  font-family : Sarabun-Regular;
+                  font-size : 2rem;
+                  line-height : 40.14px;
+                  color:#5e5e5f;
+                  span{
+                     color: #414042;
+                  }
+               }
+
+               &__amount{
+                  width: 55%;
+                  font-family : Sarabun-SemiBold;
+                  font-size : 4rem;
+                  line-height : 60.14px;
+                  color: #FFFFFF;
+                  background: #EA5133;
+                  text-align: center;
+                  border-radius: 15px;
+               }
+
+               &__amount2{
+                  width: 55%;
+                  font-family : Sarabun-SemiBold;
+                  font-size : 4rem;
+                  line-height : 60.14px;
+                  color: #FFFFFF;
+                  background: #E51A7A;
+                  text-align: center;
+                  border-radius: 15px;
+               }
+
+               &__options{
+                  display: flex;
+                  align-items: center;
+                  font-family : Sarabun-Regular;
+                  font-size : 2rem;
+                  color:#5e5e5f;
+                  padding: 1rem 6rem;
+                  
+                  &__image{
+                     &__pic{
+                        width: 2rem;
+                        margin-right: 1rem;
+                     }
+                  }
+               }
+            }
+         }
+      }
+  }
+
+  &__footer{
+   height: 25%;
+
+   &__text{
+      font-family : Sarabun-Regular;
+      font-size : 2rem;
+      line-height : 40.14px;
+      color:#5e5e5f;
+   }
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 60px;
+   height: 34px;
+ }
+ 
+ /* Hide default HTML checkbox */
+ .switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+ }
+ 
+ /* The slider */
+ .slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   -webkit-transition: .4s;
+   transition: .4s;
+ }
+ 
+ .slider:before {
+   position: absolute;
+   content: "";
+   height: 25px;
+   width: 25px;
+   left: 4px;
+   bottom: 4px;
+   background-size: cover;
+   background-image: url("/assets/images/number.png");
+   -webkit-transition: .4s;
+   transition: .4s;
+ }
+ 
+ input:checked + .slider {
+   background-color: #FFFFFF;
+   border: 1px solid red;
+ }
+ 
+ input:focus + .slider {
+   box-shadow: 0 0 0px #E51A7A;
+ }
+ 
+ input:checked + .slider:before {
+   -webkit-transform: translateX(26px);
+   -ms-transform: translateX(26px);
+   transform: translateX(26px);
+ }
+ 
+ /* Rounded sliders */
+ .slider.round {
+   border-radius: 34px;
+ }
+ 
+ .slider.round:before {
+   border-radius: 50%;
+ }

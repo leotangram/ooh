@@ -1,0 +1,455 @@
+<div class="ui stackable no-margin main-content__no-logged" *ngIf="isLarge">
+    <div class="ui large stackable secondary pointing menu nomobile grid main-content__no-logged__banner no-margin">
+      <div class="main-content__no-logged__banner__left">
+        <a href="/auth/landing/">
+          <img class="ui spaced image main-content__no-logged__banner__logo" src="/assets/images/LogoMO.png">
+        </a>
+        <div class="main-content__no-logged__banner__itemMenu" (click)="scroll2('works')">
+          <a routerLinkActive="active-active" 
+          class="item main-content__no-logged__banner__menu-option">
+            Home
+          </a>
+        </div>
+      </div>
+      <div class="main-content__no-logged__banner__right">
+        <div class="main-content__no-logged__banner__right__item">
+          <button class="button__landing__banner__login" (click)="goToLogin()">
+            LOG IN
+          </button>
+        </div>
+        <div class="main-content__no-logged__banner__right__item">
+          <button class="button__landing__banner__request" (click)="request()">
+            REQUEST CASH
+          </button>
+        </div>
+      </div>
+    </div>
+  <div class="faq" *ngIf="isLarge">
+    <div class="faq__header ui column row grid no-margin">
+        <div class="two wide column"></div>
+        <div class="six wide column">
+          <div class="faq__header__title">
+              Frequently Asked Questions
+          </div>
+          <div class="faq__header__text">
+              Sounds great because it is!
+          </div>
+          <div class="faq__header__button">
+          <button class="button__landing__banner__request-big2" (click)="request()">
+              REQUEST CASH
+          </button>
+          </div>
+        </div>
+        <div class="six wide column">
+          <div class="faq__header__image">
+          <img class="faq__header__image__pic" src="/assets/images/faqcoins.png">
+          </div>
+        </div>
+        <div class="two wide column"></div>
+    </div>
+    <div class="faq__body ui grid">
+        <div class="three column row faq__body__columns">
+          <div class="column">
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    What is MO?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    We are one of the fastest growing Fintech worldwide and we aim at 
+                    revolutionizing the credit scoring industry & promoting financial 
+                    inclusion, by giving small businesses the possibility to access 
+                    fast cash independent from their credit history.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    How do I change my business bank account?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    If you would like to change your business bank account contact us at 
+                    help@motechnologiesusa.com.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    Where can I review my payments?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    Login to review your historical payments, upcoming payments and preview payments 
+                    for a new cash request.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    What if I don’t have enough money in my business bank account to pay an installment?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    If an installment payment is missed due to insufficient funds, we will attempt to 
+                    withdraw again the following day. A penalty of $10 will be added to your last 
+                    payment for each missed installment payment.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    How do I apply?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      Applying is fast and easy.  First, we ask for basic information about your business.  
+                      Thereafter, we ask you to securely connect to your business bank account so we can 
+                      analyze your business performance and automatically approve you for the maximum cash 
+                      amount. 
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    Who funds my cash request?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    Who funds my cash request? 
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      How quickly can I get my funds?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      If you make a cash request before 11:00am EST during a business day, funds will 
+                      be deposited into your linked business bank account the same day. Otherwise, you 
+                      shall receive the funds the next business day.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      How do you use my business bank account information?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      Reviewing your business banking activity gives us a full picture of your business 
+                      in real time without requiring you to submit paperwork. Your account will remain 
+                      connected to MO not just at the time of application, but also on an ongoing basis 
+                      so you don't have to reapply or reenter your information. Our persistent data 
+                      connectivity keeps you eligible for promotional offers and ensures we approve you 
+                      for the maximum cash amount based on your most recent business activity.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      How secure is my information?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      Security is our priority and we follow the required information security practices 
+                      to maintain the integrity of your information. We can never see or store bank/data 
+                      source login information, and we have no access to save or change your bank account 
+                      data. For more information, review our Privacy Policy.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      Does you sell my information to third parties?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      We never sell your data to third parties. Your information is strictly used to help 
+                      us best serve you.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+
+          </div>
+          <div class="column">
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    Why do small businesses use MO Instant Cash?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    Every business needs additional working capital to grow their businesses in 
+                    countless ways, from marketing campaigns to purchasing inventory to hiring 
+                    new employees.  Check 13 ways you can use MO Instant Cash to show your business 
+                    some love.
+                </div>
+                <div class="faq__body__columns__card__button">
+                    <button class="button__landing__banner__download faq__body__columns__card__button__button" (click)="open()">
+                      Check here
+                    </button>
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      How do installment payments work?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    We simplify your payments by automatically withdrawing 22 equal installments from 
+                    your business bank account.  Installment payments will begin 5 business days after 
+                    we deposit your cash request.  We ask your bank to deduct installment payments 
+                    during business days only.  So you have a little over a month to pay back the debt 
+                    considering we ask the bank not to deduct installments during weekends and holidays. 
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    Can I make an early payment?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    Early payments will be handled on an exception basis. If our Customer Service approves 
+                    you for an early payment, you are still responsible to pay the entire 4.99% service 
+                    charge. If you are interested in an early payment, contact us at 
+                    help@motechnologiesusa.com.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    What does it cost to apply?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    It’s 100% free and it does not negatively impact your credit score.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    Who is eligible to request cash through MO?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    Approval requires verification of your business information, your business bank 
+                    account and a minimum sale of $1,000 each month for the three past months
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      What information and verification do you need from my business?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    Tax ID or EIN, business zip code, business bank account, e-mail or phone number 
+                    associated with your business bank account.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      Can I reapply if I'm not qualified?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      Considering we approve you for a cash request based on your business performance, 
+                      we recommend reapplying only after your business has experienced positive sales growth.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      How can I increase my chances of qualifying?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      MO looks at your business financial performance to determine the maximum cash you 
+                      can request. The more sales you're able to show, the better chance you have of 
+                      qualifying. Make sure you link the business bank account that contains the majority 
+                      of your sales transactions to improve your likelihood of qualification.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      Why do you need my business bank account information?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      Unlike other merchant funding companies, we only look at your business banking 
+                      activity to ensure we provide you the maximum cash approval decision. Logging 
+                      into your business bank account shows us how you make and spend money.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      Where is MO located?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      We are headquartered in Miami, Florida.  Contact us at help@motechnologiesusa.com.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              
+          </div>
+          <div class="column">
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    What account do you deposit my cash request and withdraw payments form?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    During the application process we ask you to link your business bank account, 
+                    which we use, as your primary payment account. Your primary payment account 
+                    is the account we deposit your cash requests and withdraw installment payments 
+                    from.   
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    How is my payment amount determined?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    The daily amount deducted will be made up of your requested cash amount plus a 
+                    one-time 4.99% service charge, divided by 22 installments.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                    When do payments post to my business bank account?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    Installment payments will begin 5 business days after we deposit your cash request.  
+                    We ask your bank to deduct installment payments during business days only.  
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      What fees are charged for a cash request?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      A one-time 4.99% service charge shall be added to the cash request amount to cover 
+                      money transferring and order processing fees.    
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      What if I can’t find my bank in the list of banks provided?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      We use 3rd party data provider Plaid to securely connect to your financial 
+                      institution. If you cannot find your bank in the list of banks provided 
+                      it’s simply because Plaid does not support connectivity to your bank and as 
+                      such we will not be able to extend you a cash request until Plaid provides 
+                      us the capability to connect to your bank.  To request for your bank to be 
+                      added to Plaid list of banks contact us at help@motechnologiesusa.com.     
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      How long does it take to be approved?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      The application and approval process only takes a few minutes.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      How do you determine how much cash I can request?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      We use modern technology to review the financial performance of your business.  
+                      We then crunch some numbers and share the maximum cash amount we can provide you.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      If I own multiple businesses, can I open multiple MO accounts?
+                </div>
+                <div class="faq__body__columns__card__text">
+                    If you own multiple businesses, you can open multiple MO accounts as long as each 
+                    business has its own unique business bank account.  You cannot link the same business 
+                    bank account to multiple MO accounts.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              <div class="faq__body__columns__card">
+                <div class="faq__body__columns__card__title">
+                      What do you do with my business bank login credentials?
+                </div>
+                <div class="faq__body__columns__card__text">
+                      We use a 3rd party data provider Plaid to securely connect to your financial 
+                      institution. We never store your login credentials and only maintains the 
+                      account connection through Plaid.
+                </div>
+                <div class="faq__body__columns__card__division">
+                    <img class="faq__body__columns__card__division__pic" src="/assets/images/division.png">
+                </div>
+              </div>
+              
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<ng-template let-context let-modal="modal" #modalInfo>
+  <div class="header header-modal modalFAQ__header">13 ways you can use MO Instant Cash</div>
+  
+  <div class="ui fluid text center aligned content-modal align-center">
+      <button class="button__landing__banner__download" 
+      (click)="modal.approve('approved')" style="margin-top: 2rem;" autofocus>
+        Done
+      </button>
+      <div class="ui hidden divider"></div>
+  </div>
+</ng-template>

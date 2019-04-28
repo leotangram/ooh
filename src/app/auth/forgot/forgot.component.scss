@@ -1,0 +1,343 @@
+@import './src/sass/variables';
+
+.main-content{
+  &__no-logged{
+    height: 100vh;
+
+    &__banner{
+      height: 10vh;
+      display: flex;
+      align-items: center;
+
+      &__logo{
+        width: 7rem;
+        margin-left: 2rem !important;
+        margin-right: 4rem !important;
+      }
+
+      &__menu-option{
+        font-family: Sarabun-SemiBold;
+        font-size: 1.5rem;
+        color: #365E80 !important;
+        letter-spacing: 0.12px;
+        text-align: center;
+      }
+
+      &__left{
+        display: flex;
+        align-items: center;
+        width: 70%;
+      }
+
+      &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30%;
+
+        &__item{
+          margin: 0 1rem;
+        }
+
+        &__itemMenu{
+          margin: 0 1.5rem;
+        }
+      }
+    }
+    &__page{
+      height: 90vh;
+      overflow-y: scroll;
+    }
+  }
+}
+
+.forgot{
+    height: 100%;
+
+    &__main{
+        height: 100%;
+        background-image: url("/assets/images/loginback.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__box{
+            background: #FFFFFF;
+            box-shadow: 0 60px 120px 0 rgba(0,0,0,0.30);
+            border-radius: 2px;
+            width: 30%;
+            height: 75%;
+            padding: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            &__title{
+                font-family: Sarabun-SemiBold;
+                font-size: 1.5rem;
+                color: #365E80;
+                letter-spacing: 2.1px;
+                text-align: center;
+            }
+
+            &__sub{
+               font-family: Sarabun-Regular;
+               font-size: 1.3rem;
+               color: #646469;
+               letter-spacing: -0.28px;
+               margin-top: 1rem;
+               text-align: center;
+            }
+
+            &__form{
+                &__input{
+                    width: 100%;
+                }
+
+                &__footer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 3rem 0;
+
+                    &__forgot{
+                        cursor: pointer;
+                        font-family: Sarabun-Regular;
+                        font-size: 1.5rem;
+                        color: #6C6C6C;
+                        letter-spacing: 0;
+                        text-align: right;
+                    }
+
+                }
+            }
+
+            &__footer{
+                font-family: Sarabun-Regular;
+                font-size: 1.1rem;
+                color: #6C6C6C;
+                letter-spacing: 0;
+                line-height: 13px;
+                text-align: center;
+            }
+        }
+
+        &__congrat{
+         background-image: url("/assets/images/loanscongrat.png");
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+         height: 100%;
+   
+         &__content{
+            width: 50%;
+            height: 100%;
+            padding: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+         }
+   
+         &__title{
+            font-family: Sarabun-SemiBold;
+            font-size: 3.9rem;
+            color: #FFFFFF;
+            letter-spacing: -1.02px;
+            line-height: 45.98px;
+         }
+   
+         &__text{
+            font-family: Sarabun-Regular;
+            font-size: 2.2rem;
+            color: #FFFFFF;
+            letter-spacing: -0.57px;
+            line-height: 35.98px;
+            margin: 4rem 0;
+         }
+   
+         &__coins{
+            position: absolute;
+            top:45%;
+            left: 30%;
+   
+            &__pic{
+               width: 50rem;
+            }
+         }
+      }
+    }
+
+}
+
+.mobile{
+    &__forgot{
+      position: relative;
+
+      &__header{
+          padding-top: 2rem;
+          height: 4rem;
+  
+          &__image{
+              margin-left: 1rem !important;
+              height: 4rem;
+              margin-bottom: 1rem;
+          }
+
+          &__menu{
+
+            &__header{
+              width: 100%;
+              background: #1DC1C1;
+              display: flex;
+              padding: 5rem 3rem;
+              align-items: center;
+              justify-content: flex-end;
+
+              &__user{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                &__pic{
+                  width: 3rem;
+                  margin-right: 1rem;
+                }
+
+                &__name{
+                  display: flex;
+                  align-items: center;
+                }
+
+                &__text{
+                  font-family: Sarabun-Regular;
+                  font-size: 1.4rem;
+                  color: #FFFFFF;
+                  letter-spacing: 0;
+                }
+              }
+
+              &__pic{
+                width: 3rem;
+              }
+            }
+            &__content{
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                padding: 7rem 4rem;
+        
+                &__option{
+                    font-family: Sarabun-Regular !important;
+                    font-size: 1.6rem !important;
+                    color: #808080 !important;
+                    letter-spacing: 0.12px !important;
+                    margin-bottom: 2rem;
+                }
+            }
+          }
+      }
+
+      &__menu{
+        &__footer{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: 5rem 3rem;
+          font-family: Sarabun-Regular;
+          font-size: 1.6rem;
+          color: #4A4A4A;
+          letter-spacing: 0.9px;
+          background: #EFECEC;
+        }
+      }
+ 
+       &__content{
+          padding: 5rem 3rem;
+          background: #1DC1C1;
+ 
+          &__title{
+             font-family: Sarabun-SemiBold;
+             font-size: 2rem;
+             color: #ffffff;
+             letter-spacing: 2.1px;
+             line-height: 25px;
+          }
+       }
+ 
+       &__form{
+          padding: 3rem;
+
+          &__input{
+            width: 100%;
+          }
+ 
+          &__title{
+             font-family: Sarabun-Regular;
+             font-size: 1.5rem;
+             color: #365E80;
+             letter-spacing: 0;
+             margin-bottom: 1rem;
+          }
+ 
+          &__content{
+             font-family: Sarabun-Regular;
+             font-size: 1.5rem;
+             color: #9B9B9B;
+             letter-spacing: 0;
+             margin-bottom: 3rem;
+          }
+       }
+ 
+       &__button{
+          text-align: center;
+ 
+          &__action{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+             &__message{
+                font-family: Sarabun-Medium;
+                font-size: 1.3rem;
+                color: #BBBBBB;
+                letter-spacing: -0.26px;
+                text-align: center;
+                padding: 3rem;
+                margin-top: 6rem;
+             }
+
+             &__forgot{
+                cursor: pointer;
+                font-family: Sarabun-Regular;
+                font-size: 1.3rem;
+                color: #6C6C6C;
+                letter-spacing: 0;
+                text-align: right;
+             }
+          }
+       }
+
+       &__congrat{
+          height: 100vh;
+          background: #1DC1C1;
+          padding: 4rem;
+
+          &__title{
+            font-family: Sarabun-SemiBold;
+            font-size: 3rem;
+            color: #FFFFFF;
+            letter-spacing: -0.59px;
+            line-height: 30.49px;
+            margin-top: 5rem;
+          }
+
+          &__button{
+            margin-top: 5rem;
+          }
+       }
+    }
+}

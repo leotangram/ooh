@@ -1,0 +1,47 @@
+@font-face {
+   font-family: Sarabun-SemiBold;
+   src: url('/assets/fonts/Sarabun/Sarabun-SemiBold.ttf');
+}
+
+@font-face {
+   font-family: Sarabun-Bold;
+   src: url('/assets/fonts/Sarabun/Sarabun-Bold.ttf');
+}
+
+@font-face {
+   font-family: Sarabun-ExtraBold;
+   src: url('/assets/fonts/Sarabun/Sarabun-ExtraBold.ttf');
+}
+
+@font-face {
+   font-family: Sarabun-BoldItalic;
+   src: url('/assets/fonts/Sarabun/Sarabun-BoldItalic.ttf');
+}
+
+@font-face {
+   font-family: Sarabun-Regular;
+   src: url('/assets/fonts/Sarabun/Sarabun-Regular.ttf');
+}
+
+@font-face {
+   font-family: Sarabun-Medium;
+   src: url('/assets/fonts/Sarabun/Sarabun-Medium.ttf');
+}
+
+@font-face {
+   font-family: Sarabun-Light;
+   src: url('/assets/fonts/Sarabun/Sarabun-Light.ttf');
+}
+
+@font-face {
+   font-family: Sarabun-Black;
+   src: url('/assets/fonts/Sarabun/Sarabun-Black.ttf');
+}
+
+.font-primary{
+   color: $primary-blue;
+}
+
+.cursor{
+   cursor: pointer;
+}

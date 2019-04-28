@@ -1,0 +1,151 @@
+<div *ngIf="isLarge" class="login">
+  <div class="login__main ui column row grid no-margin">
+    <div class="one wide column"></div>
+    <div class="six wide column login__main__first">
+      <div class="login__main__first__text">
+          ¡Bienvenido<br>
+          a <span>ivity!</span>
+      </div>
+      <div class="login__main__first__sub">
+          Somos la herramienta que le solucionará<br> 
+          verse bien en redes, sin gastar más.
+      </div>
+      <div class="login__main__first__promo">
+        <button class="login__main__first__promo__google">
+            <img class="login__main__first__promo__google__logo" src="/assets/images/glogo.png">
+          <div>
+            Acceder con Google
+          </div>
+        </button>
+      </div>
+      <div class="login__main__first__promo">
+        <button class="login__main__first__promo__facebook" (click)="goToRegister()">
+          <img class="login__main__first__promo__facebook__logo" src="/assets/images/flogo.png">
+          <div>
+            Acceder con Facebook
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="seven wide column no-padding login__main__second">
+      <div class="login__main__second__header">
+
+      </div>
+      <form class="login__main__second__form" [formGroup]="loginForm">
+        <div class="ui hidden divider"></div>
+        <div>
+          <!-- <label class="label-input">E-mail</label> -->
+          <div class="ui input field inputField login__main__second__form__input">
+            <input class="login__main__second__form__input__input" type="text" formControlName="username" name="username" placeholder="E-mail">
+          </div>
+        </div>
+        <div class="ui hidden divider"></div>
+        <div class="ui hidden divider"></div>
+        <div>
+          <!-- <label class="label-input">Contraseña</label> -->
+          <div class="ui input field inputField login__main__second__form__input">
+            <input class="login__main__second__form__input__input" type="password" formControlName="password" name="password" placeholder="Contraseña">
+          </div>
+        </div>
+        <div class="login__main__second__form__forgot">
+          Recuperar contraseña
+        </div>
+      </form>
+      <div class="login__main__second__bottom">
+        <div class="login__main__second__bottom__button">
+          <button _ngcontent-c4="" class="button__landing__main__common" (click)="login()" [disabled]="loginForm.invalid">
+            Entrar
+          </button>
+        </div>
+        <div class="login__main__second__bottom__text">
+          Al hacer click en Entrar, acepto términos de ivity.
+        </div>
+        <div class="login__main__second__bottom__text">
+         incluyendo términos de pago y Política de Privacidad.
+        </div>
+      </div>
+    </div>
+    <div class="two wide column"></div>
+  </div>
+  <div class="login__footer ui column row grid no-margin">
+    <div class="one wide column"></div>
+    <div class="fourteen wide column">
+      <div class="login__footer__content__content2 align-center">
+          Términos y condiciones    -   Política de privacidad<br>
+          ivity © 2019 All Rights Reserved
+      </div>
+    </div>
+    <div class="one wide column"></div>
+  </div>
+</div>
+
+<ng-template let-context let-modal="modal" #modalInfo>
+  <div class="content modalContent no-padding">
+    <div class="modalContent__dot">
+      <img class="modalContent__dot__pic" src="/assets/images/dot.png">
+    </div>
+    <div class="modalContent__text">
+        Ups!!!<br>
+        Hubo un error en tu solcitud.
+    </div>
+    <div class="modalContent__horizontal">
+      <img class="modalContent__horizontal__pic" src="/assets/images/horizontal.png">
+    </div>
+    <div class="modalContent__sub" style="margin-bottom: 6rem;">
+        Verifica tu usuario y contraseña<br>
+        e intentalo nuevamente
+    </div>
+    <div class="modalContent__horizontal">
+    </div>
+  </div>
+</ng-template>
+
+<ng-template let-context let-modal="modal" #modalInfo2>
+  <div class="content modalContent no-padding">
+    <div class="modalContent__dot">
+      <img class="modalContent__dot__pic3" src="/assets/images/modal3.png">
+    </div>
+    <div class="modalContent__text3">
+      Por favor visite la bandeja de<br>
+      entrada del mail <span>******@gmail.com</span><br>
+      y haga clic en el enlace de<br>
+      confirmación de cuenta.
+    </div>
+    <div class="modalContent__later">
+      <u>Hablamos pronto</u>
+    </div>
+    <div class="modalContent__again" style="margin-bottom: 3rem;">
+      Volver a enviar mail de confirmación
+    </div>
+    <div class="modalContent__horizontal">
+    </div>
+  </div>
+</ng-template>
+
+<ng-template let-context let-modal="modal" #modalInfo3>
+  <div class="content modalContent no-padding">
+    <div class="modalContent__dot">
+      <img class="modalContent__dot__pic3" src="/assets/images/modal1.png">
+    </div>
+    <div class="modalContent__text2">
+        Este usuario ha sido<br>
+        bloqueado por que no cumple<br>
+        con las políticas de ivity.<br>
+    </div>
+    <div class="modalContent__later">
+      <u>Solicitar segunda validación</u>
+    </div>
+    <div class="modalContent__again" style="margin-bottom: 3rem;">
+        ¡Estamos para ayudarlo con sus redes sociales!
+    </div>
+    <div class="modalContent__horizontal">
+    </div>
+  </div>
+</ng-template>
+
+
+<ngx-loading [show]="loading" 
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffffff', 
+              secondaryColour: '#ffffff', 
+              tertiaryColour: '#ffffff' }" 
+  [template]="customLoadingTemplate"></ngx-loading>

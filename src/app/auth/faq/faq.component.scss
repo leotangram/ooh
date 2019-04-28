@@ -1,0 +1,367 @@
+@import '../../../sass/common';
+
+.main-content{
+  &__no-logged{
+    height: 100vh;
+
+    &__banner{
+      height: 10vh;
+      display: flex;
+      align-items: center;
+
+      &__logo{
+        width: 7rem;
+        margin-left: 2rem !important;
+        margin-right: 4rem !important;
+      }
+
+      &__menu-option{
+        font-family: Sarabun-SemiBold;
+        font-size: 1.5rem;
+        color: #365E80 !important;
+        letter-spacing: 0.12px;
+        text-align: center;
+      }
+
+      &__left{
+        display: flex;
+        align-items: center;
+        width: 70%;
+      }
+
+      &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30%;
+
+        &__item{
+          margin: 0 1rem;
+        }
+
+        &__itemMenu{
+          margin: 0 1.5rem;
+        }
+      }
+    }
+    &__page{
+      height: 90vh;
+      overflow-y: scroll;
+    }
+  }
+}
+
+.faq{
+   &__header{
+      height: 35vh;
+      background: #1DC1C1;
+      width: 100%;
+
+      &__title{
+         font-family: Sarabun-SemiBold;
+         font-size: 3rem;
+         color: #FFFFFF;
+         letter-spacing: -0.81px;
+         text-align: left;
+         line-height: 34.2px;
+         margin-top: 5rem;
+      }
+
+      &__text{
+         font-family: Sarabun-Regular;
+         font-size: 2.5rem;
+         color: #FFFFFF;
+         letter-spacing: 0;
+         line-height: 31.2px;
+         margin: 2rem 0;
+      }
+
+      &__text2{
+         font-family: Sarabun-Regular;
+         font-size: 2.3rem;
+         color: #FFFFFF;
+         letter-spacing: 0;
+         line-height: 31.2px;
+      }
+
+      &__button{
+         margin-top: 3rem;
+      }
+
+      &__image{
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         &__pic{
+            width: 45%;
+         }
+      }
+   }
+
+   &__body{
+     &__columns{
+      padding: 5rem 15rem !important;
+
+      &__card{
+         padding: 1rem 3rem;
+
+         &__title{
+            font-family: Sarabun-SemiBold;
+            font-size: 2rem;
+            color: #365E80;
+            letter-spacing: 0;
+            line-height: 27px;
+         }
+         &__text{
+            font-family: Sarabun-Regular;
+            font-size: 1.7rem;
+            color: #25364B;
+            letter-spacing: 0;
+            line-height: 34px;
+            margin-top: 2rem;
+         }
+         &__title2{
+            font-family: Sarabun-SemiBold;
+            font-size: 1.5rem;
+            color: #365E80;
+            letter-spacing: 0;
+            line-height: 27px;
+         }
+         &__text2{
+            font-family: Sarabun-Regular;
+            font-size: 1.2rem;
+            color: #25364B;
+            letter-spacing: 0;
+            line-height: 20px;
+            margin-top: 0rem;
+         }
+         &__division{
+            margin: 1rem 0;
+
+            &__pic{
+               width: 90%;
+            }
+         }
+         &__button{
+            text-align: center;
+            margin-top: 2rem;
+
+            &__button{
+               width: 70%;
+            }
+         }
+      }
+     }
+   }
+
+}
+
+.mobile{
+   &__faq{
+      &__header{
+         background: #1DC1C1;
+         padding: 4rem;
+
+         &__title{
+            font-family: Sarabun-SemiBold;
+            font-size: 2rem;
+            color: #FFFFFF;
+            letter-spacing: -0.96px;
+            line-height: 27.63px;
+            text-align: center;
+         }
+         &__text{
+            font-family: Sarabun-Regular;
+            font-size: 2rem;
+            color: #FFFFFF;
+            letter-spacing: -0.96px;
+            line-height: 27.63px;
+            text-align: center;
+         }
+
+         &__button{
+            text-align: center;
+            margin-top: 3rem;
+         }
+      }
+
+      &__body{
+         padding: 3rem;
+
+         &__drop{
+
+            &__title{
+               background: #ffffff;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               margin-top: 2rem;
+   
+               &__text{
+                  font-family: Sarabun-SemiBold;
+                  font-size: 1.6rem;
+                  color: #365E80;
+                  letter-spacing: 0;
+                  line-height: 21.6px;
+               }
+   
+               &__text2{
+                  font-family: Sarabun-Regular;
+                  font-size: 2rem;
+                  color: #365E80;
+                  letter-spacing: -0.43px;
+                  line-height: 21.38px;
+                  margin-right: 3rem;
+                  display: flex;
+                  align-items: center;
+   
+                  &__image{
+                     &__pic{
+                        width: 2rem;
+                     }
+                  }
+               }
+            }
+   
+            &__content{
+               background: #F6F6F6;
+               padding: 3rem;
+   
+               &__info{
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-evenly;
+   
+                  &__icon{
+                     margin-right: 1rem;
+                     &__pic{
+                        width: 8rem;
+                     }
+                  }
+   
+                  &__text{
+                     font-family: Sarabun-Regular;
+                     font-size: 1.8rem;
+                     color: #365E80;
+                     letter-spacing: 0;
+                     line-height: 16px;
+                  }
+               }
+   
+               &__list{
+                //   display: flex;
+                //   align-items: center;
+
+                  font-family: Sarabun-Regular;
+                  font-size: 1.5rem;
+                  color: #25364B;
+                  letter-spacing: -0.4px;
+                  line-height: 20.38px;
+   
+               }
+            }
+         }
+      }
+   }
+
+   &__forgot{
+      position: relative;
+
+      &__header{
+          padding-top: 2rem;
+          height: 4rem;
+  
+          &__image{
+              margin-left: 1rem !important;
+              height: 4rem;
+              margin-bottom: 1rem;
+          }
+
+          &__menu{
+
+            &__header{
+              width: 100%;
+              background: #1DC1C1;
+              display: flex;
+              padding: 5rem 3rem;
+              align-items: center;
+              justify-content: flex-end;
+
+              &__user{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                &__pic{
+                  width: 3rem;
+                  margin-right: 1rem;
+                }
+
+                &__name{
+                  display: flex;
+                  align-items: center;
+                }
+
+                &__text{
+                  font-family: Sarabun-Regular;
+                  font-size: 1.4rem;
+                  color: #FFFFFF;
+                  letter-spacing: 0;
+                }
+              }
+
+              &__pic{
+                width: 3rem;
+              }
+            }
+            &__content{
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                padding: 7rem 4rem;
+        
+                &__option{
+                    font-family: Sarabun-Regular !important;
+                    font-size: 1.6rem !important;
+                    color: #808080 !important;
+                    letter-spacing: 0.12px !important;
+                    margin-bottom: 2rem;
+                }
+            }
+          }
+      }
+
+      &__menu{
+        &__footer{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: 5rem 3rem;
+          font-family: Sarabun-Regular;
+          font-size: 1.6rem;
+          color: #4A4A4A;
+          letter-spacing: 0.9px;
+          background: #EFECEC;
+        }
+      }
+   }
+}
+
+.modalFAQ{
+   &__header{
+      font-family: Sarabun-Regular !important;
+      font-size: 2.5rem !important;
+      color: #365E80 !important;
+      letter-spacing: -0.81px !important;
+      text-align: left !important;
+      line-height: 34.2px !important;
+   }
+
+   &__content{
+      height: 35rem;
+      overflow: scroll;
+   }
+}

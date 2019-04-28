@@ -1,0 +1,139 @@
+<div *ngIf="isLarge" class="request">
+  <div class="request__specialize" *ngIf="step == 0">
+    <div class="request__specialize__header">
+      <div class="request__specialize__header__container">
+        <div class="request__specialize__header__container__text">
+          Crear su cuenta es gratis
+        </div>        
+      </div>
+    </div>
+    <div class="request__specialize__content ui column row grid no-margin">
+      <div class="five wide column"></div>
+      <div class="six wide column no-padding request__specialize__content__con">
+        <form class="request__specialize__container__form" [formGroup]="signup" (ngSubmit)="signup()">
+          <div>
+            <label class="label-input">E-mail</label>
+            <div class="ui input field inputField login__main__box__form__input">
+              <input type="text" formControlName="email" name="email" placeholder="">
+            </div>
+          </div>
+          <div class="ui hidden divider"></div>
+          <div class="ui hidden divider"></div>
+          <div class="ui hidden divider"></div>
+          <div>
+            <label class="label-input">Contraseña</label>
+            <div class="ui input field inputField login__main__box__form__input">
+              <input type="password" formControlName="password" name="password" placeholder="" 
+              (input)="onPassChange($event.target.value)">
+            </div>
+          </div>
+        </form>
+        <div class="request__specialize__container__check">
+          <div class="request__specialize__container__check__option">
+            <div class="ui checkbox">
+              <input disabled type="checkbox" name="terms" (change)="changeEvent3($event)" [checked]="cond1">
+              <label class="align-left request__specialize__container__check__option">
+                Su contraseña debe ser mínimo de 8 caracteres
+              </label>
+            </div>
+          </div>
+          <div class="request__specialize__container__check__option">
+            <div class="ui checkbox">
+              <input disabled type="checkbox" name="terms" (change)="changeEvent3($event)" [checked]="cond2">
+              <label class="align-left request__specialize__container__check__option">
+                Debe incluir mayúsculas, minúsculas y números
+              </label>
+            </div>
+          </div>
+          <div class="request__specialize__container__check__option2">
+            <div class="request__specialize__container__check__option2__radio">
+              <img *ngIf="!accept" (click)="acceptClick()" class="request__specialize__container__check__option2__radio__pic" src="/assets/images/radiooff.png">
+              <img *ngIf="accept" (click)="acceptClick()" class="request__specialize__container__check__option2__radio__pic" src="/assets/images/radioon.png">
+            </div>
+              Acepto los términos y condiciones y las Políticas de Privacidad
+          </div>
+          <div class="request__specialize__container__button">
+            <button class="button__landing__main__common" (click)="step_one()" [disabled]="!cond1 || !cond2 || !accept || signup.invalid">
+            <!-- <button class="button__landing__main__common" (click)="step_one()"> -->
+              Siguiente
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="five wide column"></div>
+    </div>
+    <div class="request__specialize__footer ui column row grid no-margin">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column">
+        <div class="request__specialize__footer__content__content2 align-center">
+          Términos y condiciones    -   Política de privacidad<br>
+          ivity © 2019 All Rights Reserved
+        </div>
+      </div>
+      <div class="one wide column"></div>
+    </div>
+  </div>
+</div>
+
+<ng-template let-context let-modal="modal" #modalInfo>
+  <div class="content modalContent no-padding">
+    <div class="modalContent__dot">
+      <img class="modalContent__dot__pic2" src="/assets/images/modal1.png">
+    </div>
+    <div class="modalContent__sub2">
+        Si desea continuar con el formulario<br> 
+        de información adicional lo puede<br> 
+        hacer ahora para que conozcamos<br> 
+        mejor sobre su compañía.
+    </div>
+    <div class="modalContent__banner__cont">
+      <div class="modalContent__banner">
+        Continuar con formulario de
+        información adicional
+      </div>
+    </div>
+    <div class="modalContent__banner__cont">
+      <div class="modalContent__banner">
+          En otro momento
+      </div>
+    </div>
+    <div class="modalContent__redes">
+        Visítenos en nuestras redes sociales
+    </div>
+    <div class="modalContent__redescont">
+      
+    </div>
+    <!-- <div class="modalContent__x">
+      <img class="modalContent__x__image" src="/assets/images/closeicon.png">
+    </div> -->
+    
+  </div>
+</ng-template>
+
+<ng-template let-context let-modal="modal" #modalInfo2>
+  <div class="content modalContent no-padding">
+    <div class="modalContent__dot">
+      <img class="modalContent__dot__pic" src="/assets/images/dot.png">
+    </div>
+    <div class="modalContent__text">
+        Ups!!!<br>
+        Hubo un error en tu solcitud.
+    </div>
+    <div class="modalContent__horizontal">
+      <img class="modalContent__horizontal__pic" src="/assets/images/horizontal.png">
+    </div>
+    <div class="modalContent__sub" style="margin-bottom: 6rem;">
+        {{ context.data.message }}
+    </div>
+    <div class="modalContent__horizontal">
+    </div>
+  </div>
+</ng-template>
+
+
+
+<ngx-loading [show]="loading" 
+  [config]="{ backdropBorderRadius: '3px', primaryColour: '#ffffff', 
+              secondaryColour: '#ffffff', 
+              tertiaryColour: '#ffffff' }" 
+  [template]="customLoadingTemplate"></ngx-loading>

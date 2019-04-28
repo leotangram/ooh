@@ -1,0 +1,115 @@
+@import './src/sass/variables';
+
+.dashboard{
+  height: 100%;
+
+   &__main{
+      height: 88%;
+      background-image: url("/assets/images/dashback.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &__text{
+         font-family : Sarabun-SemiBold;
+         font-size : 7rem;
+         line-height : 90.14px;
+         color: #E51A7A;
+         margin: 4rem 0;
+         text-align: center;
+         span{
+         color : #FC5424;
+         }
+      } 
+
+      &__text2{
+         font-family : Sarabun-SemiBold;
+         font-size : 7rem;
+         line-height : 60.14px;
+         color: #E51A7A;
+         margin: 4rem 0;
+         text-align: left;
+         padding: 0 5rem;
+         span{
+         color : #FC5424;
+         }
+      } 
+
+      &__center{
+         display: flex !important;
+         flex-direction: column;
+         justify-content: center;
+      }
+
+      &__progress{
+         padding: 0 15rem;
+
+         &__pic{
+            width: 100%;
+         }
+      }
+
+      &__sub{
+         font-family : Sarabun-Regular;
+         font-size : 2.5rem;
+         line-height : 30px;
+         color: #414042;
+         margin: 3rem 0 0rem 0;
+         text-align: center;
+         padding: 0 10rem;
+         span{
+            color: #E51A7A;
+         }
+      }
+
+      &__sub2{
+         font-family : Sarabun-Regular;
+         font-size : 2.5rem;
+         line-height : 30px;
+         color: #414042;
+         margin: 3rem 0 0rem 0;
+         text-align: left;
+         padding: 0 15rem 0 5rem;
+         span{
+            color: #E51A7A;
+         }
+      }
+
+      &__image{
+         padding: 0 10rem;
+         &__pic{
+            width: 25rem;
+         }
+      }
+   }
+
+   &__footer{
+      height: 12%;
+      background: #F1F2F2;
+  
+      &__title{
+        font-family : Sarabun-Bold;
+        font-size : 2rem;
+        margin: 4rem 0px;
+        line-height : 21px;
+        color : #414042;
+      }
+  
+      &__content{
+        font-family : Sarabun-Regular;
+        font-size : 1.7rem;
+        line-height : 30px;
+        color : #414042;
+  
+        &__content2{
+          font-family : Sarabun-Regular;
+          font-size : 1.7rem;
+          line-height : 30px;
+          color : #414042;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+}

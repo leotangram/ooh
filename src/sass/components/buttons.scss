@@ -1,0 +1,146 @@
+.button {
+  cursor: pointer;
+  font-family: Sarabun-Bold;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius : 10px;
+  border: none;
+
+
+  &__landing{
+    &__banner{
+      &__account{
+        @extend .button;
+        background-image: url('/assets/images/buttons/button1.png');
+        color: #FFFFFF;
+        padding: 1rem 2.5rem;;
+        font-size: 1.8rem;
+        letter-spacing : 0.48px;
+        box-shadow: 0 4px 15px 0 rgba(224, 60, 49,0.6);
+      }
+
+      &__free{
+        @extend .button;
+        background-image: url('/assets/images/buttons/button2.png');
+        color: #FFFFFF;
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+        letter-spacing : 0.48px;
+        box-shadow: 0 4px 15px 0 rgba(205, 60, 102,0.6);
+      }
+
+      &__free-mob{
+        @extend .button;
+        background-image: url('/assets/images/buttons/mobileB.png');
+        color: #FFFFFF;
+        padding: 1rem 9rem 1.5rem 9rem;;
+        font-size: 2.5rem;
+        letter-spacing : 0.48px;
+        box-shadow: 0 4px 15px 0 rgba(205, 60, 102,0.6);
+      }
+    }
+
+    &__main{
+      &__promo{
+        @extend .button;
+        background: #FFFFFF;
+        color: #EA5133;
+        border: 3px solid #EA5133;
+        padding: 1rem 2.5rem 1.5rem 2.5rem;
+        font-size: 2.5rem;
+        letter-spacing : 0.48px;
+        border-radius: 20px !important;
+      }
+
+      &__promo2{
+        @extend .button;
+        background: transparent;
+        color: #EA5133;
+        border: none;
+        padding: 1rem 0rem 1.5rem 0rem;
+        font-size: 2.5rem;
+        letter-spacing : 0.48px;
+        border-radius: 20px !important;
+        cursor: default !important;
+      }
+
+      &__common{
+        @extend .button;
+        background: #E51A7A;
+        color: #FFFFFF;
+        border: 3px solid #E51A7A;
+        padding: 1rem 2.5rem 1.5rem 2.5rem;
+        font-size: 2.5rem;
+        letter-spacing : 0.48px;
+        border-radius: 20px !important;
+      }
+
+      &__promo-mob{
+        @extend .button;
+        background: #FFFFFF;
+        color: #EA5133;
+        border: 3px solid #EA5133;
+        padding: 1rem 2rem;;
+        font-size: 2rem;
+        letter-spacing : 0.48px;
+        border-radius: 20px !important;
+      }
+
+      &__test-big{
+        @extend .button;
+        background-image: url('/assets/images/buttons/button2.png');
+        color: #FFFFFF;
+        padding: 2rem 4rem 2.5rem 4rem;
+        font-size: 3.5rem;
+        letter-spacing : 0.48px;
+        box-shadow: 0 4px 15px 0 rgba(205, 60, 102,0.6);
+        border-radius: 30px !important; 
+      }
+
+      &__test-huge{
+        @extend .button;
+        background-image: url('/assets/images/buttons/button2.png');
+        color: #FFFFFF;
+        padding: 3rem 4rem 4rem 4rem;
+        font-size: 4rem;
+        letter-spacing : 0.48px;
+        box-shadow: 0 4px 15px 0 rgba(205, 60, 102,0.6);
+        border-radius: 30px !important; 
+      }
+
+      &__try{
+        @extend .button;
+        background: #E51A7A;
+        color: #FFFFFF;
+        border: 3px solid #FFFFFF;
+        padding: 1rem 2.5rem 1.5rem 2.5rem;
+        font-size: 2.5rem;
+        letter-spacing : 0.48px;
+        border-radius: 20px !important;
+      }
+    }
+
+    &__register{
+      &__next{
+        @extend .button;
+        background-image: url('/assets/images/buttons/button2.png');
+        color: #FFFFFF;
+        padding: 1.3rem 6rem 2rem 6rem;
+        font-size: 3rem;
+        letter-spacing : 0.48px;
+        box-shadow: 0 4px 15px 0 rgba(205, 60, 102,0.6);
+        border-radius: 20px !important; 
+      }
+    }
+  }
+ }
+ 
+ button:disabled,
+ button[disabled]{
+  cursor: default;
+  opacity: 0.45 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+ }

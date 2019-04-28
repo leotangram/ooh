@@ -1,0 +1,249 @@
+<sui-message class="icon" style="margin: 0px;" *ngIf="message.text">
+  <i class="warning icon"></i>
+  <div class="content">
+    <div class="header">
+      Notificación
+    </div>
+    <p>{{ message.text }}</p>
+  </div>
+</sui-message>
+<div *ngIf="isLarge">
+  <div *ngIf="!authService.isLogged()">
+    <div class="ui stackable no-margin main-content__no-logged">
+      <div class="ui large stackable secondary pointing menu nomobile grid main-content__no-logged__banner no-margin">
+        <div class="main-content__no-logged__banner__left">
+          <a href="/auth/landing">
+            <img class="ui spaced image main-content__no-logged__banner__logo" src="/assets/images/LogoIvity.png">
+          </a> 
+        </div>
+        <div class="main-content__no-logged__banner__right">
+          <div class="main-content__no-logged__banner__itemMenu">
+            <a routerLinkActive="active-active" 
+            class="item main-content__no-logged__banner__menu-option">
+              Ayuda
+            </a>
+          </div>
+          <div class="main-content__no-logged__banner__right__item" *ngIf="(current != '/login') && (current != '/auth/login')">
+            <button class="button__landing__banner__account" (click)="login()">
+              Su cuenta
+            </button>
+          </div>
+          <div class="main-content__no-logged__banner__right__item" *ngIf="(current != '/register') && (current != '/auth/register')">
+            <button class="button__landing__banner__free" (click)="goToPage('/register')">
+              Pruebe gratis
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content__no-logged__page">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <div *ngIf="authService.isLogged()">
+    <div class="ui stackable no-margin main-content__no-logged" *ngIf="(current == '/aditional/one')">
+      <div class="ui large stackable secondary pointing menu nomobile grid main-content__no-logged__banner no-margin">
+        <div class="main-content__no-logged__banner__left">
+          <a href="/auth/landing">
+            <img class="ui spaced image main-content__no-logged__banner__logo" src="/assets/images/LogoIvity.png">
+          </a> 
+        </div>
+        <div class="main-content__no-logged__banner__right">
+          <div class="main-content__no-logged__banner__itemMenu">
+            <div class="item main-content__no-logged__banner__menu-option" (click)="logout()">
+              Cerrar sesión
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content__no-logged__page" *ngIf="(current == '/aditional/one')">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- TEMPLATE -->
+    <div class="template" *ngIf="(current != '/aditional/one')">
+      <sui-sidebar-container class="ui bottom attached segment">
+        <!-- Menu right -->
+          <sui-sidebar class="vertical template__right" direction="right" transition="overlay" #sidebar>
+              <div class="template__right__content">
+                <div class="template__right__content__text">
+                    Medios sugeridos<br>
+                    para publicar:
+                </div>
+                <div class="template__right__content__icons">
+                  <img class="template__right__content__icons__pic" src="/assets/images/igicon.png">
+                  <img class="template__right__content__icons__pic" src="/assets/images/faceicon.png">
+                </div>
+                <img class="template__right__content__divide" src="/assets/images/divideresume.png">
+                <div class="template__right__content__text">
+                    Total publicaciones<br>
+                    diseñadas:
+                </div>
+                <div class="template__right__content__icons">
+                  <img class="template__right__content__icons__pic" src="/assets/images/number.png">
+                </div>
+                <img class="template__right__content__divide" src="/assets/images/divideresume.png">
+                <div class="template__right__content__text">
+                    Total publicaciones<br>
+                    al aire:
+                </div>
+                <div class="template__right__content__icons">
+                  <img class="template__right__content__icons__pic" src="/assets/images/number.png">
+                </div>
+                <img class="template__right__content__divide" src="/assets/images/divideresume.png">
+                <div class="template__right__content__text">
+                    Registro de<br>
+                    publicaciones:
+                </div>
+                <div class="template__right__content__icons">
+                  <img class="template__right__content__icons__pic" src="/assets/images/yes.png">
+                  <img class="template__right__content__icons__pic" src="/assets/images/no.png">
+                </div>
+                <img class="template__right__content__divide" src="/assets/images/divideresume.png">
+                <img class="template__right__content__resume" src="/assets/images/resume.png">
+              </div>
+          </sui-sidebar>
+          <sui-sidebar-sibling [isDimmedWhenVisible]="false">
+            <div class="template__container ui column row grid no-margin">
+              <!-- Menu left -->
+              <div class="three wide column template__container__bar">
+                <div class="template__container__bar__logo">
+                  <img class="template__container__bar__logo__pic" src="/assets/images/logowhite.png">
+                </div>
+
+                <div class="template__container__bar__menu">
+                  <div class="template__container__bar__menu__option" 
+                  routerLink="/dashboard" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="template__container__bar__menu__selected">
+                    Inicio
+                  </div>
+                  <div class="template__container__bar__menu__option" 
+                  routerLink="/dashboard/publications" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="template__container__bar__menu__selected">
+                    Publicaciones
+                  </div>
+                  <div class="template__container__bar__menu__option" 
+                  routerLink="/profile/info" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="template__container__bar__menu__selected">
+                    Perfil de la<br>
+                    empresa
+                  </div>
+                  <div class="template__container__bar__menu__option"
+                  routerLink="/plans/main" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="template__container__bar__menu__selected">
+                    Planes y<br>
+                    servicios
+                  </div>
+                  <div class="template__container__bar__menu__option">
+                      Pagos
+                  </div>
+                  <div class="template__container__bar__menu__option">
+                    Mensajes
+                  </div>
+                </div>
+
+              </div>
+              <!-- NavBar -->
+              <div class="thirteen wide column no-padding" style="height: 100%;">
+                <div class="template__container__settings">
+                  <div class="template__container__settings__options">
+                    <div class="template__container__settings__options__option">
+                      <img class="template__container__settings__options__pic" src="/assets/images/bell.png">
+                    </div>
+                    <div class="template__container__settings__options__option">
+                      <img class="template__container__settings__options__pic2" src="/assets/images/help.png">
+                    </div>
+                    <div class="template__container__settings__options__option2">
+                      <img class="template__container__settings__options__pic" src="/assets/images/user.png">
+                    </div>
+                    <div class="template__container__settings__options__option3">
+                      Nombre Usuario
+                    </div>
+                    <div class="template__container__settings__options__option2">
+                      <img class="template__container__settings__options__pic" src="/assets/images/settings.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="template__container__content">
+                  <router-outlet></router-outlet>
+                </div>
+              </div>
+            </div>
+          </sui-sidebar-sibling>
+      </sui-sidebar-container>
+      <div class="template__marker" (click)="sidebar.toggle()">
+          <img class="template__marker__logo" src="/assets/images/shortlogo.png">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="!isLarge">
+  <div *ngIf="!authService.isLogged()">
+
+    <div class="ui fluid mobileAPP  mobileAPP__landing__header">
+      <a href="/">
+        <img class="ui spaced logo image grid mobileAPP__landing__header__image" src="/assets/images/LogoIvity.png">
+      </a>
+      <div class="ui right floated basic segment grid" style="padding-right: 3%;">
+        <div class="ui dropdown grid mobileAPP__landing__header__menu" (click)="sidebar.toggle(); top();">
+            Menú <img src="/assets/images/arrowdown.png" style="width: 3.5rem;">
+        </div>
+      </div>
+    </div>
+    
+    <sui-sidebar-container class="ui bottom attached segment">
+      <sui-sidebar class="vertical" direction="top" transition="overlay" style="background:#ffffff" #sidebar>
+        <div class="mobileAPP__landing__header__menu">
+          <div class="mobileAPP__landing__header__menu__content">
+            
+            <a routerLinkActive="active-active" (click)="scroll2('works2'); sidebar.toggle()" 
+            class="mobileAPP__landing__header__menu__content__option">
+              Su cuenta
+            </a>
+            <a routerLinkActive="active-active" (click)="goToPage('/auth/register'); sidebar.toggle()" 
+            class="mobileAPP__landing__header__menu__content__option2">
+              Pruebe gratis
+            </a>
+            <a routerLinkActive="active-active" (click)="sidebar.toggle();" 
+              class="mobileAPP__landing__header__menu__content__option3">
+               Ayuda
+            </a>
+          </div>
+        </div>
+      </sui-sidebar>
+      <sui-sidebar-sibling [isDimmedWhenVisible]="true">
+        <router-outlet></router-outlet>
+      </sui-sidebar-sibling>
+    </sui-sidebar-container>
+  </div>
+
+  <div *ngIf="authService.isLogged()">
+    <div class="ui fluid mobileAPP  mobileAPP__landing__header">
+      <a href="/">
+        <img class="ui spaced logo image grid mobileAPP__landing__header__image" src="/assets/images/LogoIvity.png">
+      </a>
+      <div class="ui right floated basic segment grid" style="padding-right: 3%;">
+        <div class="ui dropdown grid mobileAPP__landing__header__menu" (click)="sidebar.toggle(); top();">
+            Menú <img src="/assets/images/arrowdown.png" style="width: 3.5rem;">
+        </div>
+      </div>
+    </div>
+    
+    <sui-sidebar-container class="ui bottom attached segment">
+      <sui-sidebar class="vertical" direction="top" transition="overlay" style="background:#ffffff" #sidebar>
+        <div class="mobileAPP__landing__header__menu">
+          <div class="mobileAPP__landing__header__menu__content">
+            <a routerLinkActive="active-active" (click)="sidebar.toggle();logout()"
+              class="mobileAPP__landing__header__menu__content__option3">
+                Cerrar sesión
+            </a>
+          </div>
+        </div>
+      </sui-sidebar>
+      <sui-sidebar-sibling [isDimmedWhenVisible]="true">
+        <router-outlet></router-outlet>
+      </sui-sidebar-sibling>
+    </sui-sidebar-container>
+  </div>
+</div>
+
+

@@ -1,0 +1,312 @@
+@import './src/sass/variables';
+@import './src/sass/icons';
+@import './src/sass/components/fonts';
+@import './src/sass/components/forms';
+@import './src/sass/components/tooltip';
+@import './src/sass/components/nouislider';
+@import './src/sass/components/buttons';
+@import './src/sass/components/screen-auth';
+@import './src/sass/components/sidebar';
+@import './src/sass/components/modal';
+
+html{
+    font-size: 55%;
+}
+
+b {
+    font-family: Sarabun-Bold !important;
+}
+
+.pushable>.pusher{
+    overflow: visible !important;
+}
+
+a {
+    color: #A1A0A0 !important;
+}
+
+.ui.secondary.pointing.menu {
+    border-bottom: solid !important;
+    border-bottom-width: 5px !important;
+    border-bottom-color: rgba(118, 118, 118, 0.1) !important;
+}
+
+* ::-webkit-scrollbar {
+    display: none;
+  }
+
+.ui.segment{
+    border-radius: 0;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.ui.secondary.pointing.menu .active.item{
+    border-color: #FFFFFF !important;
+}
+
+.container {
+    height: 100vh;
+}
+
+.container2 {
+    height: 200vh;
+}
+
+.container4 {
+    height: 150vh;
+}
+
+.container3 {
+    height: 75vh;
+}
+
+.container5 {
+    height: 50vh;
+}
+
+.div1 {
+    height: 100% !important;
+}
+
+.main-banner{
+    position: relative;
+}
+
+.header-banner-mobile {
+    padding: 0% 10% !important;
+}
+
+.ui.segment{
+    margin-bottom: 0 !important;
+}
+
+.modalContent{
+
+   &__dot{
+      text-align: center;
+      margin-top: 3rem;
+
+      &__pic{
+         width: 2rem;
+      }
+   }
+
+   &__text{
+      font-family : Sarabun-SemiBold;
+      font-size : 3rem;
+      color: #EA5133;
+      text-align: center;
+      margin: 3rem;
+   }
+
+   &__text2{
+      font-family : Sarabun-SemiBold;
+      font-size : 2.5rem;
+      color: #414042;
+      text-align: center;
+      margin: 3rem;
+   }
+
+   &__horizontal{
+      margin: 2rem;
+      text-align: center;
+      &__pic{
+         width: 80%;
+      }
+   }
+
+   &__sub{
+      font-family : Sarabun-Regular;
+      font-size : 2.5rem;
+      text-align: center;
+      color : #414042;
+      line-height: 25px;
+      margin-top: 3rem;
+   }
+
+   &__sub4{
+      font-family : Sarabun-Regular;
+      font-size : 2.5rem;
+      text-align: center;
+      color : #EA5133;
+      line-height: 25px;
+      margin: 3rem;
+   }
+
+   &__sub5{
+      background-image: url("/assets/images/backresult.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: -5rem;
+      font-family : Sarabun-SemiBold;
+      font-size : 3rem;
+      text-align: center;
+      color : #FFFFFF;
+      line-height: 25px;
+      padding: 2.5rem 0rem;
+   }
+
+   &__sub3{
+      font-family : Sarabun-Regular;
+      font-size : 2rem;
+      text-align: center;
+      color : #FFFFFF;
+      padding: 0 18rem;
+      background: #e94258
+   }
+
+   &__banner{
+      width: 60%;
+      background-image: url("/assets/images/backresult.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family : Sarabun-Bold;
+      font-size : 2rem;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 15px;
+      line-height: 25px;
+      cursor: pointer;
+
+      &__cont{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+   }
+
+   &__redes{
+      font-family : Sarabun-Regular;
+      font-size : 2rem;
+      text-align: center;
+      color : #414042;
+      text-align: center;
+      margin: 3rem;
+   }
+
+   &__redescont{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3rem;
+
+      &__image{
+         width: 4rem;
+         margin: 0 .5rem;
+      }  
+   }
+}
+
+
+@media only screen and (max-width: 1149px) {
+    .ui.attached.segment {
+        border-top: 3px solid #FC5424;
+    }
+
+    .nomobile{
+        display: none !important;
+    }
+
+    .noUi-tooltip{
+        display: none !important;
+    }
+
+    .noUi-value{
+        display:none !important;
+    }
+
+    .justmobile{
+        display: block !important;
+    }
+
+    .ui.grid.segment {
+        margin-top: 0.7rem !important;
+        margin-right: 0px;
+        margin-bottom: 0.7rem !important;
+        margin-left: 0px;
+    }
+}
+
+.ui.message {
+    margin: 0 !important;
+    padding: .5em 1em !important;
+}
+
+.ui.message .header:not(.ui) {
+    font-size: 1.5rem;
+}
+
+.ui.message .list:not(.ui) li:last-child {
+    font-size: 1.4rem;
+}
+
+.ui.tiny.modal {
+    border-radius: 10px;
+}
+
+.ui.modal{
+    position: absolute !important;
+    top: 50% !important;
+    left: 32%;
+    right: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.modal{
+        position: absolute !important;
+        top: 50% !important;
+        left: 2%;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .nolarge{
+        display: none !important;
+    }
+
+    .justlarge{
+        display: block !important;
+    }
+
+}
+
+@media only screen and (min-width: 767px) {
+    .nomobile-device {
+        display: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .notablet-device {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 369px) {
+    .what-text{
+        font-size: 0.8em !important;
+    }
+}
